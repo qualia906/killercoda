@@ -1,0 +1,6 @@
+{
+  "title": "Kubernetes 2 node multi-step verification",
+  "description": "このシナリオは作成中です"
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+}

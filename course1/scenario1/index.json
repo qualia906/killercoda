@@ -1,6 +1,6 @@
 {
   "title": "Kubernetes 1 node multi-step verification",
-  "description": "Uses a one node Kubernetes cluster and performs user input verification in all steps",
+  "description": "1 ノードの Kubernetes クラスタを使用した初歩的な Pod 操作スキルのアセスメント",
   "details": {
     "intro": {
       "text": "intro.md"

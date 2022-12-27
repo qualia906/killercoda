@@ -9,6 +9,8 @@ https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-
   
 ```plain
 k scale deployment/my-first-deployment --replicas=3
+
 k get deployment my-first-deployment
 ```{{exec}}
+
 </details>

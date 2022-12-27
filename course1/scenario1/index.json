@@ -1,5 +1,5 @@
 {
-  "title": "Kubernetes 1 node multi-step verification",
+  "title": "基本的な Pod の操作",
   "description": "1 ノードの Kubernetes クラスタを使用した初歩的な Pod 操作スキルのアセスメント",
   "details": {
     "intro": {

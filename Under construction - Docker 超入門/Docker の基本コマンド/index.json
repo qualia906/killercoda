@@ -1,6 +1,6 @@
 {
   "title": "Docker の基本コマンド",
-  "description": "この Lab では Docker の基本コマンドの使い方を学習します。",
+  "description": "Docker 基本コマンドの演習",
   "details": {
     "intro": {
       "text": "intro.md"

@@ -1,15 +1,17 @@
 このホストの Docker Engine のバージョンは何ですか。
 
--[] 1.12.1-ce
--[] 24.0.5
--[] 17.12.1-ee
--[] 1.13.1-ce
+ - [] A. 1.12.1-ce
+ - [] B. 24.0.5
+ - [] C. 17.12.1-ee
+ - [] D. 1.13.1-ce
 
 これは `test` です。
 
 <details>
   <summary>Hints</summary>
-  <p>`docker version` コマンドを使用します。</p>
+  <div>
+  `docker version`コマンドを使用します。
+  </div>
 </details>
 
 <details>

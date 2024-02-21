@@ -1,9 +1,9 @@
 このホストの Docker Engine のバージョンは何ですか。
 
--[ ] A
--[ ] B
--[ ] C
--[ ] D
+- [ ]A
+- [ ]B
+- [x] C
+- [ ] D
 
 
 <details>

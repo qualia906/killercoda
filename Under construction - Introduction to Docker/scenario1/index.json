@@ -7,12 +7,12 @@
     },
     "steps": [
       {
-        "title": "Pod の作成",
+        "title": "問題 1",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Pod の削除",
+        "title": "問題 1",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }

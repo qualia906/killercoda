@@ -1,6 +1,7 @@
 {
   "items": [
     { "path": "course1" },
-    { "path": "course2" }
+    { "path": "course2" },
+    { "path": "Under construction - Introduction to Docker"}
   ]
 }

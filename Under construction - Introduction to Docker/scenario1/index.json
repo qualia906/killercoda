@@ -8,11 +8,90 @@
     "steps": [
       {
         "title": "問題 1",
-        "text": "step1/text.md",
-        "verify": "step1/verify.sh"
+        "text": "step1/text.md"
       },
       {
-        "title": "問題 1",
+        "title": "問題 2",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "問題 3",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "問題 4",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "問題 5",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "問題 6",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "問題 7",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      },
+      {
+        "title": "問題 8",
+        "text": "step8/text.md",
+        "verify": "step8/verify.sh"
+      },
+      {
+        "title": "問題 9",
+        "text": "step9/text.md",
+        "verify": "step9/verify.sh"
+      },
+      {
+        "title": "問題 10",
+        "text": "step10/text.md",
+        "verify": "step10/verify.sh"
+      },
+      {
+        "title": "問題 11",
+        "text": "step11/text.md",
+        "verify": "step11/verify.sh"
+      },
+      {
+        "title": "問題 12",
+        "text": "step12/text.md",
+        "verify": "step12/verify.sh"
+      },
+      {
+        "title": "問題 13",
+        "text": "step13/text.md",
+        "verify": "step13/verify.sh"
+      },
+      {
+        "title": "問題 14",
+        "text": "step14/text.md",
+        "verify": "step14/verify.sh"
+      },
+      {
+        "title": "問題 15",
+        "text": "step15/text.md",
+        "verify": "step15/verify.sh"
+      },
+      {
+        "title": "問題 16",
+        "text": "step16/text.md",
+        "verify": "step16/verify.sh"
+      },
+      {
+        "title": "問題 17",
+        "text": "step17/text.md",
+        "verify": "step17/verify.sh"
+      },
+      {
+        "title": "問題 2",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }
@@ -22,6 +101,6 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-2nodes"
+    "imageid": "ubuntu"
   }
 }

@@ -8,7 +8,7 @@
 <details>
   <summary>Hints</summary>
 
-`docker version`コマンドを使用します。
+`docker version` コマンドを使用します。
 
 </details>
 
@@ -22,6 +22,6 @@
 <details>
   <summary>Answer</summary>
 
-20.0.5
+24.0.5
 
 </details>

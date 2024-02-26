@@ -12,6 +12,6 @@
   <summary>Solution</summary>
 
 すべてのコンテナを停止し削除します。
-その上で、`docker image rm $(docker image ls -aq)` コマンドを実行してすべてのイメージを削除します。
+その上で、`docker image rm $(docker image ls -aq)`{{execute}} コマンドを実行してすべてのイメージを削除します。
 
 </details>

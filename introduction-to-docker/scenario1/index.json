@@ -82,11 +82,6 @@
         "title": "問題 16",
         "text": "step16/text.md",
         "verify": "step16/verify.sh"
-      },
-      {
-        "title": "問題 17",
-        "text": "step17/text.md",
-        "verify": "step17/verify.sh"
       }
     ],
     "finish": {

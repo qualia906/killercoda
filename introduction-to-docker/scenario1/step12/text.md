@@ -5,7 +5,7 @@
   <summary>Hints</summary>
 
 コンテナを停止するには `docker container stop <CONTAINER ID | CONTAINER NAME>`{{copy}} コマンドを実行します。  
-コンテナを削除するには `docker container rm <CONTAINER ID | CONTAINER NAME>` {{copy}} コマンドを実行します。
+コンテナを削除するには `docker container rm <CONTAINER ID | CONTAINER NAME>`{{copy}} コマンドを実行します。
 
 </details>
 

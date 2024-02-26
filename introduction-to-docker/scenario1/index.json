@@ -30,33 +30,27 @@
       },
       {
         "title": "問題 6",
-        "text": "step6/text.md",
-        "verify": "step6/verify.sh"
+        "text": "step6/text.md"
       },
       {
         "title": "問題 7",
-        "text": "step7/text.md",
-        "verify": "step7/verify.sh"
+        "text": "step7/text.md"
       },
       {
         "title": "問題 8",
-        "text": "step8/text.md",
-        "verify": "step8/verify.sh"
+        "text": "step8/text.md"
       },
       {
         "title": "問題 9",
-        "text": "step9/text.md",
-        "verify": "step9/verify.sh"
+        "text": "step9/text.md"
       },
       {
         "title": "問題 10",
-        "text": "step10/text.md",
-        "verify": "step10/verify.sh"
+        "text": "step10/text.md"
       },
       {
         "title": "問題 11",
-        "text": "step11/text.md",
-        "verify": "step11/verify.sh"
+        "text": "step11/text.md"
       },
       {
         "title": "問題 12",

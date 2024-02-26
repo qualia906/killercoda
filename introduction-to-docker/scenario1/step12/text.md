@@ -4,7 +4,7 @@
 <details>
   <summary>Hints</summary>
 
-コンテナを停止するには `docker container stop` コマンドを実行します。  
+コンテナを停止するには `docker container stop \<CONTAINER ID \| CONTAINER NAME\>` コマンドを実行します。  
 コンテナを削除するには `docker container rm <CONTAINER ID | CONTAINER NAME>` コマンドを実行します。
 
 </details>
@@ -12,7 +12,7 @@
 <details>
   <summary>Solution</summary>
 
-すべてのコンテナを一括で停止するには `docker container stop $(docker ps -aq)` を実行します。  
-すべてのコンテナを一括で削除するには `docker container rm $(docker ps -aq)` コマンドを実行します。
+すべてのコンテナを一括で停止するには `docker container stop $(docker container ls -aq)`{{execute}} を実行します。  
+すべてのコンテナを一括で削除するには `docker container rm $(docker container ls -aq)`{{execute}} コマンドを実行します。
 
 </details>

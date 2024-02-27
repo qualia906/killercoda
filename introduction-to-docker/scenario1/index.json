@@ -3,7 +3,8 @@
   "description": "Docker 基本コマンドの演習",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro/intro.md",
+      "background": "intro/background.sh"
     },
     "steps": [
       {
@@ -34,7 +35,9 @@
       },
       {
         "title": "問題 7",
-        "text": "step7/text.md"
+        "text": "step7/text.md",
+        "foreground": "step7/foreground.sh",
+        "background": "step7/background.sh"
       },
       {
         "title": "問題 8",

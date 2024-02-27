@@ -1,7 +1,7 @@
 コンテナ `nginx-1` で使用されているイメージは以下のどれですか。
 
 - [ ] nginx
-- [ ] nginx:alpine *
+- [ ] nginx:alpine
 - [ ] nginx:v2
 - [ ] nginx:1.7
 - [ ] alpine

@@ -36,7 +36,6 @@
       {
         "title": "問題 7",
         "text": "step7/text.md",
-        "foreground": "step7/foreground.sh",
         "background": "step7/background.sh"
       },
       {

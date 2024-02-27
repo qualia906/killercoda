@@ -9,7 +9,7 @@
 <details>
   <summary>Hints</summary>
 
-`docker container ls -a` コマンドを実行して STATES 列を確認します。
+`docker container ls -a` コマンドを実行して STATUS 列を確認します。
 
 </details>
 

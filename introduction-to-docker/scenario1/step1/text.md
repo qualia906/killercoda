@@ -15,7 +15,7 @@
 <details>
   <summary>Solution</summary>
 
-`docker version` コマンドを実行し、Server セクションの Engine の Version を確認します。
+`docker version`{{execute}} コマンドを実行し、Server セクションの Engine の Version を確認します。
 
 </details>
 

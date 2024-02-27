@@ -9,3 +9,5 @@ docker image pull alpine
 docker image pull ubuntu
 docker image pull kodekloud/simple-webapp-mysql
 docker image pull kodekloud/simple-webapp
+
+echo done > /tmp/background_intro

@@ -1,5 +1,3 @@
 #!/bin/bash
 
-echo Waiting for background scripts to finish
-while [ ! -f /tmp/background7 ]; do sleep 1; done
-echo Done
+/bin/bash /my/location/step7.sh

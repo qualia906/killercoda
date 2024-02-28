@@ -17,7 +17,7 @@
       },
       {
         "title": "問題 3",
-        "background": "step3/background.sh",
+        "foreground": "step3/foreground.sh",
         "text": "step3/text.md"
       },
       {

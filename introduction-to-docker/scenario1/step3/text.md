@@ -17,6 +17,6 @@
 <details>
   <summary>Answer</summary>
 
-9
+5
 
 </details>

@@ -3,6 +3,13 @@
 <details>
   <summary>Hints</summary>
 
-`docker run --name webapp nginx:1.14-alpine` を実行します。
+  detached モードでコンテナを実行するために `docker run` コマンドで `-d` フラグを指定します。
+
+</details>
+
+<details>
+  <summary>Solution</summary>
+
+`docker container run -d --name webapp nginx:1.14-alpine`{{execute}} を実行します。
 
 </details>

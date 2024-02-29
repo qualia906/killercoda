@@ -18,18 +18,15 @@
       },
       {
         "title": "問題 3",
-        "foreground": "step3/foreground.sh",
         "text": "step3/text.md"
       },
       {
         "title": "問題 4",
-        "text": "step4/text.md",
-        "verify": "step4/verify.sh"
+        "text": "step4/text.md"
       },
       {
         "title": "問題 5",
-        "text": "step5/text.md",
-        "verify": "step5/verify.sh"
+        "text": "step5/text.md"
       },
       {
         "title": "問題 6",

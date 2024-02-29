@@ -72,8 +72,7 @@
         {"file": "step1.sh", "target": "/my/location", "chmod": "+x"},
         {"file": "step3.sh", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step8.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step11.py", "target": "/my/location", "chmod": "+x"}
+        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"}
       ]
     },
     "finish": {

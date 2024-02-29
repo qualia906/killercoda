@@ -1,0 +1,86 @@
+{
+  "title": "3. Docker イメージのビルド",
+  "description": "Docker コンテナイメージの演習",
+  "details": {
+    "intro": {
+      "text": "intro/intro.md",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "問題 1",
+        "text": "step1/text.md",
+        "foreground" : "step1/foreground.sh"
+      },
+      {
+        "title": "問題 2",
+        "text": "step2/text.md"
+      },
+      {
+        "title": "問題 3",
+        "text": "step3/text.md",
+        "foreground" : "step3/foreground.sh",
+        "background" : "step3/background.sh"
+      },
+      {
+        "title": "問題 4",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "問題 5",
+        "text": "step5/text.md"
+      },
+      {
+        "title": "問題 6",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "問題 7",
+        "text": "step7/text.md"
+      },
+      {
+        "title": "問題 8",
+        "text": "step8/text.md",
+        "verify": "step8/verify.sh"
+      },
+      {
+        "title": "問題 9",
+        "text": "step9/text.md",
+        "verify": "step9/verify.sh"
+      },
+      {
+        "title": "問題 10",
+        "text": "step10/text.md"
+      },
+      {
+        "title": "問題 11",
+        "text": "step11/text.md",
+        "verify": "step11/verify.sh"
+      },
+      {
+        "title": "問題 12",
+        "text": "step12/text.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "color-webapp/Dockerfile", "target": "/root/color-webapp"},
+        {"file": "color-webapp/app.py", "target": "/root/color-webapp"},
+        {"file": "color-webapp/requirements.txt", "target": "/root/color-webapp"},
+        {"file": "color-webapp/templates/index.html", "target": "/root/color-webapp/templates"},
+        {"file": "step1.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "step3.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step8.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step11.py", "target": "/my/location", "chmod": "+x"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

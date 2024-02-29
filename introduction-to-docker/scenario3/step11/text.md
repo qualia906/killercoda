@@ -29,6 +29,6 @@
 <details>
   <summary>Answer</summary>
 
-ubuntu
+debian
 
 </details>

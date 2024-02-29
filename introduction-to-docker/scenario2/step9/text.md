@@ -1,10 +1,10 @@
 以下の条件でコンテナをバックグラウンド (detached モード) で起動してください。
 
-- コンテナ名：green-app
-- イメージ：kodekloud/simple-webapp
-- 環境変数：APP_COLOR=green
-- コンテナポート：8080
-- ホストポート：38285
+- コンテナ名：`green-app`
+- イメージ：`kodekloud/simple-webapp`
+- 環境変数：`APP_COLOR=green`
+- コンテナポート：`8080`
+- ホストポート：`38285`
 
 <details>
   <summary>Hints</summary>

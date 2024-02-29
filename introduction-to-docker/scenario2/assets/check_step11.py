@@ -13,6 +13,11 @@ def check_mysql_config(container_id):
     if mysql_root_password_var not in env_vars:
         return False
 
+    # Check detached mode
+    config = details[0]['Config']
+    if config['AttachStdin'] or config['AttachStdout'] or config['AttachStderr']:
+        return False
+
     return True
 
 if __name__ == '__main__':

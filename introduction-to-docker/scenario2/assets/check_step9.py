@@ -22,6 +22,11 @@ def check_container_config(container_id):
     if 'kodekloud/simple-webapp' not in image:
         return False
 
+    # Check detached mode
+    config = details[0]['Config']
+    if config['AttachStdin'] or config['AttachStdout'] or config['AttachStderr']:
+        return False
+
     return True
 
 if __name__ == '__main__':

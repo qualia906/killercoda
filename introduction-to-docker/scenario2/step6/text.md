@@ -1,6 +1,6 @@
 以下の条件でコンテナをバックグラウンド (detached モード) で起動してください。
 
-- イメージ：kodekloud/sample-webapp
+- イメージ：kodekloud/simple-webapp
 - タグ：bule
 - コンテナポート：8080
 - ホストポート：38282

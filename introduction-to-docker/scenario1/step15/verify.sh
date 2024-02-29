@@ -1,17 +1,11 @@
 #!/bin/bash
 
-# Get the container ID.
-container_id=$(docker ps | grep nginx:1.14-alpine | grep webapp | awk '{print $1}')
+running_container=$(docker ps --filter "ancestor=nginx:1.14-alpine" --filter "name=webapp" --format "{{.Names}}")
 
-# Check if the container is running.
-if [ -z "$container_id" ]; then
-  exit 1
+if [ "$running_container" == "webapp" ]; then
+    python /my/location/check_detached.py "webapp"
+    exit_code=$?
+    exit $exit_code
+else
+    exit 1
 fi
-
-# Check if the container is in detached mode.
-if [ "$(docker inspect -f '{{ .State.Running }}' $container_id)" != "true" ]; then
-  exit 1
-fi
-
-exit 0
-

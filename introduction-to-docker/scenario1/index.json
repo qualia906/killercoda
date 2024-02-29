@@ -89,7 +89,8 @@
     "assets": {
       "host01": [
         {"file": "step3.sh", "target": "/my/location", "chmod": "+x"},
-        {"file": "step7.sh", "target": "/my/location", "chmod": "+x"}
+        {"file": "step7.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_detached.py", "target": "/my/location", "chmod": "+x"}
       ]
     },
     "finish": {

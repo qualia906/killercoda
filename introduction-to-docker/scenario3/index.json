@@ -54,8 +54,7 @@
       },
       {
         "title": "問題 11",
-        "text": "step11/text.md",
-        "verify": "step11/verify.sh"
+        "text": "step11/text.md"
       },
       {
         "title": "問題 12",

@@ -78,8 +78,12 @@
       },
       {
         "title": "問題 16",
-        "text": "step16/text.md",
-        "verify": "step16/verify.sh"
+        "text": "step16/text.md"
+      },
+      {
+        "title": "問題 17",
+        "text": "step17/text.md",
+        "verify": "step17/verify.sh"
       }
     ],
     "assets": {

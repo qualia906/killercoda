@@ -1,17 +1,29 @@
-このホストからすべてのコンテナ イメージを削除してください。  
-必要に応じてコンテナも削除してください。
+実行したコンテナの OS バージョンは何ですか。 
+OS バージョンは、コンテナ内の /etc/os-release ファイルを参照することで調べることができます。
+
+- [ ] 4.2.1
+- [ ] 1.2.4
+- [ ] 3.9.3
+- [ ] 2.6.1
+- [ ] 1.8.0
 
 <details>
   <summary>Hints</summary>
 
-イメージを削除するには `docker image rm` コマンドか `docker rmi` コマンドを使用します。
+`docker container exec` コマンドを使用してコンテナ内の /etc/os-release を参照します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-すべてのコンテナを停止し削除します。
-その上で、`docker image rm $(docker image ls -aq)`{{execute}} コマンドを実行してすべてのイメージを削除します。
+`docker container exec webapp cat /etc/os-release`{{execute}} を実行してバージョンを確認します。
+
+</details>
+
+<details>
+  <summary>Answer</summary>
+
+3.9.3
 
 </details>

@@ -21,20 +21,21 @@
 <details>
   <summary>Solution</summary>
 
-以下を実行します。
+まずイメージを `pull` します。
 ```
 docker image pull nginx
 docker image pull httpd
 ```{{execute}}
 
 
+次に、取得したイメージから別名のイメージを作成します。
 ```
 docker image tag nginx localhost:5000/nginx
 docker image tag httpd localhost:5000/httpd
 ```{execute}
 
 
-
+イメージをプライベート レジストリに `push` します。
 ```
 docker image push localhost:5000/nginx
 docker image push localhost:5000/httpd

@@ -32,7 +32,7 @@ docker image pull httpd
 ```
 docker image tag nginx localhost:5000/nginx
 docker image tag httpd localhost:5000/httpd
-```{execute}
+```{{execute}}
 
 
 イメージをプライベート レジストリに `push` します。

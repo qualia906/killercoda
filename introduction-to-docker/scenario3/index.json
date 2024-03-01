@@ -84,7 +84,7 @@
         {"file": "_step1.sh", "target": "/my/location", "chmod": "+x"},
         {"file": "_step3.sh", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step8.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "_check_step9.py", "target": "/my/location", "chmod": "+x"},
         {"file": "_check_step13.py", "target": "/my/location", "chmod": "+x"},
         {"file": "_Dockerfile-ubuntu", "target": "/root"},
         {"file": "check_step15.py", "target": "/my/location", "chmod": "x"}

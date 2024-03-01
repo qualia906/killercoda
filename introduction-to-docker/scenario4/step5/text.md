@@ -6,15 +6,7 @@
 レジストリのサーバー名は `localhost:5000` で指定できます。
 レジストリにイメージが保存できているかは `curl -X GET localhost:5000/v2/_catalog`{{execute}} で確認できます。
 
-::: warning
-まず最初に 2 つのイメージを pull する必要があります。
-:::
-
-:::note warn
-まず最初に 2 つのイメージを pull する必要があります。
-:::
-
-> **Warning**  
+> **注意**  
 > まず最初に 2 つのイメージを pull する必要があります。
 
 
@@ -35,14 +27,18 @@ docker image pull nginx
 docker image pull httpd
 ```{{execute}}
 
+
 ```
 docker image tag nginx localhost:5000/nginx
 docker image tag httpd localhost:5000/httpd
 ```{execute}
 
+
+
 ```
 docker image push localhost:5000/nginx
 docker image push localhost:5000/httpd
 ```{{execute}}
+
 
 </details>

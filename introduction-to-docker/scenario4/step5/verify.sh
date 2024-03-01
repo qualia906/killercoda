@@ -1,14 +1,32 @@
 #!/bin/bash
 
-# Pythonスクリプトを使用して、nginxとhttpdイメージがローカルレジストリに存在するかチェック
-python3 /my/location/check_step5.py "localhost:5000/nginx" "localhost:5000/httpd"
+# ローカルレジストリのURL
+registry_url="localhost:5000"
 
-exit_code=$?
+# チェックするイメージ
+images=("nginx" "httpd")
 
-if [ $exit_code -eq 0 ]; then
-    echo "All specified images are stored."
-else
-    echo "All specified images are not stored."
-fi
+# イメージがレジストリに存在するか確認する関数
+check_image_in_registry() {
+    image=$1
+    full_image_name="${registry_url}/${image}"
+    
+    # イメージリストを取得して指定されたイメージが存在するか確認
+    if curl -s "http://${registry_url}/v2/${image}/tags/list" | grep -q "tags"; then
+        echo "${full_image_name} is in the registry"
+    else
+        echo "${full_image_name} is not in the registry"
+        return 1
+    fi
+}
 
-exit $exit_code
+# すべてのイメージに対してチェックを実行
+for image in "${images[@]}"; do
+    if ! check_image_in_registry $image; then
+        exit 1
+    fi
+done
+
+# すべてのイメージが存在する場合
+echo "OK"
+exit 0

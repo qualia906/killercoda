@@ -11,6 +11,11 @@ def check_container_command(container_id):
 
     details = json.loads(result.stdout)
 
+    # Check detached mode
+    if details[0]['Config']['AttachStdout'] or details[0]['Config']['AttachStderr']:
+        print("Container is not running in detached mode.")
+        return False
+
     # Check command
     if details[0]['Config']['Cmd'] != ['sleep', '1000']:
         print("Container command is not 'sleep 1000'.")

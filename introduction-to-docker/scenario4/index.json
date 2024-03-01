@@ -47,7 +47,6 @@
     "assets": {
       "host01": [
         {"file": "check_step4.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step5.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step6.py", "target": "/my/location", "chmod": "+x"}
       ]
     },

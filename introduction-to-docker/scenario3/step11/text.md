@@ -22,7 +22,7 @@
 以下のどちらかを実行します。
 
 - `docker container run python:3.6 cat /etc/*release*`{{exec}}
-- `docker container exec -it color-webapp cat /etc/*release*`{{exec}}
+- `docker container exec <CONTAINER_ID | CONTAINER_NAME> cat /etc/*release*`{{copy}}
 
 </details>
 

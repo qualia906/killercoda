@@ -15,7 +15,6 @@ max_size="150MB"
 
 if [ $(echo $image_size | grep -Eo '[0-9]+') -gt $(echo $max_size | grep -Eo '[0-9]+') ]; then
     exit 1
-else
 fi
 
 # Invoke Python script to check image conf

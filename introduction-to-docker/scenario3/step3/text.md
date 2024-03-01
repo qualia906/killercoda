@@ -5,7 +5,7 @@
 - [ ] 1.14
 - [ ] 11cd0b38bc3c
 - [ ] 1.10.1
-- [ ] 1.14-alpine *
+- [ ] 1.14-alpine
 - [ ] perl
 
 <details>

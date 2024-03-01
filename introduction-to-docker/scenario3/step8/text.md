@@ -1,5 +1,6 @@
-この `Dockerfile` を使用し、`color-webapp` という名前をつけてイメージをビルドしてください。タグは指定しないでください。
+この `Dockerfile` とアプリケーションのコードから、`color-webapp` という名前のイメージをビルドしてください。タグは指定しないでください。
 
+- Dockerfile：`/root/color-webapp/Dockerfile`
 - イメージ名：`color-webapp`
 
 <details>

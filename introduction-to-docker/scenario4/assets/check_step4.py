@@ -18,6 +18,8 @@ def check_container_details(container_id):
         print("Container is not in detached mode.")
         return False
 
+    return True
+
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: python check_step4.py <container_id>")

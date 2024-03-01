@@ -1,5 +1,5 @@
 アプリケーションのコードはコンテナのどこにコピーされますか。
-`color-webapp` ディレクトリの `Dockerfile` を調べて回答してください。
+`/root/color-webapp` ディレクトリの `Dockerfile` を調べて回答してください。
 
 - [ ] /var
 - [ ] /root
@@ -10,7 +10,7 @@
 <details>
   <summary>Hints</summary>
 
-`color-webapp/Dockerfile` を参照して `COPY` のアーギュメントを確認します。
+`/root/color-webapp/Dockerfile` を参照して `COPY` のアーギュメントを確認します。
 
 </details>
 

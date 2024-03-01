@@ -1,6 +1,6 @@
 アプリケーションのコードを用意しました。  
 `Dockerfile` で指定されているベースイメージは以下のどれですか。  
-`color-webapp` ディレクトリの `Dockerfile` を調べて回答してください。
+`/root/color-webapp` ディレクトリの `Dockerfile` を調べて回答してください。
 
 - [ ] rhel:3.6
 - [ ] python:3.6
@@ -12,7 +12,7 @@
 <details>
   <summary>Hints</summary>
 
-`color-webapp/Dockerfile` を参照して `FROM` のアーギュメントを確認します。
+`/root/color-webapp/Dockerfile` を参照して `FROM` のアーギュメントを確認します。
 
 </details>
 

@@ -8,7 +8,7 @@
 <details>
   <summary>Hints</summary>
 
-`color-webapp/Dockerfile` を参照して `EXPOSE` のアーギュメントを確認します。
+`/root/color-webapp/Dockerfile` を参照して `EXPOSE` のアーギュメントを確認します。
 
 </details>
 

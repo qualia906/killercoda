@@ -14,6 +14,6 @@
 <details>
   <summary>Solution</summary>
 
-`docker container run -p 8282:8080 color-webapp`{{execute}} を実行します。 
+`docker container run -d -p 8282:8080 color-webapp`{{execute}} を実行します。 
 
 </details>

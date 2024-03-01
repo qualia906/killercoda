@@ -81,13 +81,13 @@
         {"file": "color-webapp/app.py", "target": "/root/color-webapp"},
         {"file": "color-webapp/requirements.txt", "target": "/root/color-webapp"},
         {"file": "color-webapp/templates/hello.html", "target": "/root/color-webapp/templates"},
-        {"file": "step1.sh", "target": "/my/location", "chmod": "+x"},
-        {"file": "step3.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "_step1.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "_step3.sh", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step8.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step13.py", "target": "/my/location", "chmod": "+x"},
         {"file": "_Dockerfile-ubuntu", "target": "/root"},
-        {"file": "_check_step15.py", "target": "/my/location", "chmod": "x"}
+        {"file": "check_step15.py", "target": "/my/location", "chmod": "x"}
       ]
     },
     "finish": {

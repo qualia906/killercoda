@@ -68,8 +68,7 @@
       },
       {
         "title": "問題 14",
-        "text": "step14/text.md",
-        "verify": "step14/verify.sh"
+        "text": "step14/text.md"
       }
     ],
     "assets": {

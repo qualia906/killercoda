@@ -11,6 +11,6 @@
 <details>
   <summary>Solution</summary>
 
-`docker container exec nginx-1 bash -c "echo 'My important data' > /usr/local/share/my-volume/data.txt'"`{{execute}} を実行します。
+`docker container exec nginx-1 bash -c "echo 'My important data' > /usr/local/share/my-volume/data.txt"`{{execute}} を実行します。
 
 </details>

@@ -4,14 +4,14 @@
 
 > 注意
 > このラボ環境では Docker Compose のバージョンの問題で `docker compose` コマンドを使用することができません。
-> 
+> かわりに従来の `docker-compose` コマンドを使用してください
 
 (時間に余裕があれば、Docker Compose でのアプリケーションの一括削除も試してみてください)
 
 <details>
   <summary>Hints</summary>
 
-`docker compose up` コマンドを使用します。
+`/root/click-counter` ディレクトリに移動して `docker-compose up` コマンドを使用します。
 
 </details>
 
@@ -19,7 +19,13 @@
 <details>
   <summary>Solution</summary>
 
-`docker compose up -d -f /root/click-counter/docker-compose.yml`{{execute}} を実行します。  
-アプリケーションを一括削除するには、`docker compose down -f /root/click-counter/docker-compose.yml` を実行します。
+以下を実行します。
+```
+cd /root/click-counter
+docker-compose up -d
+```{{execute}}
+
+
+アプリケーションを一括削除するには、`docker-compose down -f /root/click-counter/docker-compose.yml` を実行します。
 
 </details>

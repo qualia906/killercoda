@@ -13,7 +13,8 @@
 > 注意
 > `docker-compose.yml` の先頭か末尾に `version: '3.7'` という行を入れてください。  
 > これは Compose ファイルのバージョンを指定するもので、バージョンによってサポートされている設定オプションに違いがあります。  
-> https://docs.docker.jp/compose/compose-file/compose-versioning.html
+> https://docs.docker.jp/compose/compose-file/compose-versioning.html  
+> Compose V2 がインストールされている環境では Compose ファイルでのバージョン指定は不要ですが、このラボ環境ではバージョン指定が必要です。
 
 <br />
 

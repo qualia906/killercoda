@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Verify container image
-container_id=$(docker ps --filter "ancestor=kodekloud/simple-webapp:blue" --format "{{.ID}}")
+container_id=$(docker ps --filter "ancestor=qualia906/simple-webapp:blue" --format "{{.ID}}")
 
 if [ -z "$container_id" ]; then
     exit 1

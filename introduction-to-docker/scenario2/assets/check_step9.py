@@ -19,7 +19,7 @@ def check_container_config(container_id):
 
     # Check image name
     image = details[0]['Config']['Image']
-    if 'kodekloud/simple-webapp' not in image:
+    if 'qualia906/simple-webapp' not in image:
         return False
 
     # Check detached mode

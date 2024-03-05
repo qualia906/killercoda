@@ -10,7 +10,7 @@
   - コンテナポート：`5000`
   - ホストポート：`8085`
 
-> 注意
+> **注意**  
 > `docker-compose.yml` の先頭か末尾に `version: '3.7'` という行を入れてください。  
 > これは Compose ファイルのバージョンを指定するもので、バージョンによってサポートされている設定オプションに違いがあります。  
 > https://docs.docker.jp/compose/compose-file/compose-versioning.html  

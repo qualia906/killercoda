@@ -5,13 +5,13 @@
 <details>
   <summary>Hints</summary>
 
-`docker exec` コマンドを使用してコンテナ内で `touch newfile.txt` を実行します。
+`docker container exec` コマンドを使用してコンテナ内で `touch newfile.txt` を実行します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-`docker exec alpine-1 touch newfile.txt`{{execute}} コマンドを実行します
+`docker container exec alpine-1 touch newfile.txt`{{execute}} コマンドを実行します
 
 </details>

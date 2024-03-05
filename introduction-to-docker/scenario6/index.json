@@ -1,0 +1,64 @@
+{
+  "title": "6. ネットワーク",
+  "description": "Docker のネットワーク機能の演習",
+  "details": {
+    "intro": {
+      "text": "intro/intro.md",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "問題 1",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "問題 2",
+        "text": "step2/text.md",
+        "foreground": "step2/foreground.sh"
+      },
+      {
+        "title": "問題 3",
+        "text": "step3/text.md"
+      },
+      {
+        "title": "問題 4",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "問題 5",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "問題 6",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      },
+      {
+        "title": "問題 7",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      },
+      {
+        "title": "問題 8",
+        "text": "step8/text.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "check_step4.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step5.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step6.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step7.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "step2.sh", "target": "/my/location", "chmod": "+x"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

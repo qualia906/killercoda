@@ -7,9 +7,9 @@ def check_container_config(container_name):
     result = subprocess.run(['docker', 'inspect', container_name], capture_output=True, text=True)
     details = json.loads(result.stdout)
 
-    # コンテナがkodekloud/simple-webapp-mysqlイメージから作成されていることをチェック
-    if 'kodekloud/simple-webapp-mysql' not in details[0]['Config']['Image']:
-        print(f"Container {container_name} is not created from kodekloud/simple-webapp-mysql image.")
+    # コンテナがqualia906/simple-webapp-mysqlイメージから作成されていることをチェック
+    if 'qualia906/simple-webapp-mysql' not in details[0]['Config']['Image']:
+        print(f"Container {container_name} is not created from qualia906/simple-webapp-mysql image.")
         return False
 
     # Detachedモードで実行されていることをチェック

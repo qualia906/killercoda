@@ -24,8 +24,8 @@ def check_container_config(container_name):
 
     # 環境変数をチェック
     env_vars = details[0]['Config']['Env']
-    if "DB_Host=mysql-db" not in env_vars:
-        print("Environment variable DB_Host is not set correctly.")
+    if "DB_Host=mysql-db" not in env_vars or "DB_Password=db_pass123" not in env_vars:
+        print("Environment variables are not set correctly.")
         return False
 
     # ポートマッピングをチェック

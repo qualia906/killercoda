@@ -2,55 +2,38 @@ import subprocess
 import json
 import sys
 
-def check_container_config():
-    # 実行中のコンテナの詳細情報を取得
-    result = subprocess.run(['docker', 'ps', '-a', '--format', '{{.Names}}'], capture_output=True, text=True)
-    if result.returncode != 0:
-        print("コンテナのリスト取得に失敗しました。")
-        return False
+def get_containers_info():
+    result = subprocess.run(['docker', 'ps', '--format', '{{.Names}}'], capture_output=True, text=True, check=True)
+    container_names = result.stdout.strip().split('\n')
+    
+    containers_info = []
+    for name in container_names:
+        inspect_result = subprocess.run(['docker', 'inspect', name], capture_output=True, text=True, check=True)
+        containers_info.append(json.loads(inspect_result.stdout)[0])
+    
+    return containers_info
 
-    container_names = result.stdout.split()
+def check_containers(containers_info):
+    redis_found, clickcounter_found = False, False
+    for container in containers_info:
+        image = container['Config']['Image']
+        names = container['Name']
+        ports = container.get('NetworkSettings', {}).get('Ports', {})
+        if 'redis:alpine' in image:
+            redis_found = True
+        if 'qualia906/click-counter' in image and '5000/tcp' in ports and any(p['HostPort'] == '8085' for p in ports['5000/tcp']):
+            clickcounter_found = True
+    
+    return redis_found and clickcounter_found
 
-    # 期待する設定
-    expected_configs = {
-        "redis": {
-            "image": "redis:alpine",
-        },
-        "clickcounter": {
-            "image": "qualia906/click-counter",
-            "ports": ["8085:5000"],
-        }
-    }
-
-    # コンテナごとに設定を検証
-    for name, config in expected_configs.items():
-        if name not in container_names:
-            print(f"コンテナ {name} は実行中ではありません。")
-            return False
-        
-        # コンテナの詳細情報を取得
-        inspect_result = subprocess.run(['docker', 'inspect', name], capture_output=True, text=True)
-        details = json.loads(inspect_result.stdout)
-
-        # イメージを検証
-        if config["image"] not in details[0]["Config"]["Image"]:
-            print(f"コンテナ {name} はイメージ {config['image']} から作成されていません。")
-            return False
-
-        # ポートを検証（clickcounterのみ）
-        if "ports" in config:
-            ports = details[0]["HostConfig"]["PortBindings"]
-            for port in config["ports"]:
-                internal, external = port.split(":")
-                if f"{internal}/tcp" not in ports or ports[f"{internal}/tcp"][0]["HostPort"] != external:
-                    print(f"コンテナ {name} のポート {port} が正しくマッピングされていません。")
-                    return False
-
-    return True
-
-if __name__ == "__main__":
-    if check_container_config():
-        print("すべてのコンテナは指定された設定で正しく実行されています。")
+def main():
+    containers_info = get_containers_info()
+    if check_containers(containers_info):
+        print("Docker Compose services are up and running correctly.")
         sys.exit(0)
     else:
+        print("Docker Compose services are not running as expected.")
         sys.exit(1)
+
+if __name__ == '__main__':
+    main()

@@ -1,4 +1,4 @@
-以下の設定で、ネットワーク `mysql-network` に接続された `webapp` という名前のコンテナを実行してください。
+以下の設定で、ネットワーク `mysql-network` に接続された `webapp` という名前のコンテナを detached モードで実行してください。
 
 - コンテナ名：`webapp`
 - イメージ：`qualia906/simple-webapp-mysql`

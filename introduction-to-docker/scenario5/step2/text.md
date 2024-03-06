@@ -1,4 +1,4 @@
-イメージ `alpine` を使用して `sleep 2000` を実行する `alpine-1` という名前のコンテナを detatched モードで実行してください。 
+イメージ `alpine` を使用して `sleep 1000` を実行する `alpine-1` という名前のコンテナを detatched モードで実行してください。 
 
 - イメージ：`alpine`
 - コンテナ名：`alpine-1`

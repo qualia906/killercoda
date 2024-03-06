@@ -8,80 +8,80 @@
     },
     "steps": [
       {
-        "title": "問題 1",
+        "title": "問題 1/17",
         "text": "step1/text.md"
       },
       {
-        "title": "問題 2",
+        "title": "問題 2/17",
         "text": "step2/text.md"
       },
       {
-        "title": "問題 3",
+        "title": "問題 3/17",
         "foreground": "step3/foreground.sh",
         "text": "step3/text.md"
       },
       {
-        "title": "問題 4",
+        "title": "問題 4/17",
         "text": "step4/text.md",
         "verify": "step4/verify.sh"
       },
       {
-        "title": "問題 5",
+        "title": "問題 5/17",
         "text": "step5/text.md",
         "verify": "step5/verify.sh"
       },
       {
-        "title": "問題 6",
+        "title": "問題 6/17",
         "text": "step6/text.md"
       },
       {
-        "title": "問題 7",
+        "title": "問題 7/17",
         "text": "step7/text.md",
         "foreground": "step7/foreground.sh",
         "background": "step7/background.sh"
       },
       {
-        "title": "問題 8",
+        "title": "問題 8/17",
         "text": "step8/text.md"
       },
       {
-        "title": "問題 9",
+        "title": "問題 9/17",
         "text": "step9/text.md"
       },
       {
-        "title": "問題 10",
+        "title": "問題 10/17",
         "text": "step10/text.md"
       },
       {
-        "title": "問題 11",
+        "title": "問題 11/17",
         "text": "step11/text.md"
       },
       {
-        "title": "問題 12",
+        "title": "問題 12/17",
         "text": "step12/text.md",
         "verify": "step12/verify.sh"
       },
       {
-        "title": "問題 13",
+        "title": "問題 13/17",
         "text": "step13/text.md",
         "verify": "step13/verify.sh"
       },
       {
-        "title": "問題 14",
+        "title": "問題 14/17",
         "text": "step14/text.md",
         "verify": "step14/verify.sh"
       },
       {
-        "title": "問題 15",
+        "title": "問題 15/17",
         "text": "step15/text.md",
         "verify": "step15/verify.sh"
       },
       {
-        "title": "問題 16",
+        "title": "問題 16/17",
         "text": "step16/text.md"
       },
       {
-        "title": "問題 17",
+        "title": "問題 17/17",
         "text": "step17/text.md",
         "verify": "step17/verify.sh"
       }

@@ -1,4 +1,5 @@
-このホストの Docker Engine のバージョンは何ですか。
+このホストの Docker Engine のバージョンは何ですか。  
+参考：https://docs.docker.jp/engine/reference/commandline/version.html
 
 - [ ] 1.12.1-ce
 - [ ] 24.0.5

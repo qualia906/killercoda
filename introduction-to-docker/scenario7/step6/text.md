@@ -7,7 +7,6 @@
 デプロイが完了したら以下のリンクから `clickcounter` にアクセスしてアプリケーションが正常に動作しているか確認できます。  
 {{TRAFFIC_HOST1_8085}}
 
-(時間に余裕があれば、Docker Compose でのアプリケーションの一括削除も試してみてください)
 
 <details>
   <summary>Hints</summary>

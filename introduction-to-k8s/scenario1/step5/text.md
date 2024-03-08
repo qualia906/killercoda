@@ -2,10 +2,10 @@
 Pod の詳細を確認して回答してください。
 
 - [ ] master
-- [ ] master & node-1
+- [ ] master & node01
 - [ ] controlplane
-- [ ] node-1
-- [ ] node-2
+- [ ] node01
+- [ ] node02
 
 
 <details>

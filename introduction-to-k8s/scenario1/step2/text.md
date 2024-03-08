@@ -7,10 +7,10 @@
 `kubectl run` コマンドを使用します。
 
 </details>
-gc
+
 <details>
   <summary>Solution</summary>
 
-`kubectl run nginx-1 --image=nginx`{{execute}} を実行します。
+`kubectl run nginx-1 --image nginx`{{execute}} を実行します。
 
 </details>

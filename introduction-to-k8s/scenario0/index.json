@@ -1,0 +1,43 @@
+{
+  "title": "0. ラボの使い方",
+  "description": "ハンズオン ラボの使い方",
+  "details": {
+    "intro": {
+      "text": "intro/intro.md",
+      "background": "intro/background.sh"
+    },
+    "steps": [
+      {
+        "title": "説明",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "例題 1/3",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "例題 2/3",
+        "text": "step3/text.md"
+      },
+      {
+        "title": "例題 3/3",
+        "text": "step4/text.md",
+        "foreground": "step4/foreground.sh",
+        "background": "step4/background.sh"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "check_step2.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "step4.sh", "target": "/my/location", "chmod": "+x"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

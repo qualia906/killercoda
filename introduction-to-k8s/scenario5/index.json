@@ -1,0 +1,87 @@
+{
+  "title": "5. Volume",
+  "description": "Docker のデータと Volume の演習",
+  "details": {
+    "intro": {
+      "text": "intro/intro.md"
+    },
+    "steps": [
+      {
+        "title": "問題 1/14",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "問題 2/14",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "問題 3/14",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "問題 4/14",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "問題 5/14",
+        "text": "step5/text.md"
+      },
+      {
+        "title": "問題 6/14",
+        "text": "step6/text.md"
+      },
+      {
+        "title": "問題 7/14",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
+      },
+      {
+        "title": "問題 8/14",
+        "text": "step8/text.md"
+      },
+      {
+        "title": "問題 9/14",
+        "text": "step9/text.md",
+        "verify": "step9/verify.sh"
+      },
+      {
+        "title": "問題 10/14",
+        "text": "step10/text.md",
+        "verify": "step10/verify.sh"
+      },
+      {
+        "title": "問題 11/14",
+        "text": "step11/text.md",
+        "verify": "step11/verify.sh"
+      },
+      {
+        "title": "問題 12/14",
+        "text": "step12/text.md",
+        "verify": "step12/verify.sh"
+      },
+      {
+        "title": "問題 13/14",
+        "text": "step13/text.md",
+        "verify": "step13/verify.sh"
+      },
+      {
+        "title": "問題 14/14",
+        "text": "step14/text.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "check_step2.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step10.py", "target": "/my/location", "chmod": "+x"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

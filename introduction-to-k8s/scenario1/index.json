@@ -1,0 +1,79 @@
+{
+  "title": "1. kubectl コマンドを使ってみる",
+  "description": "基本の kubectl コマンドの演習",
+  "details": {
+    "intro": {
+      "text": "intro/intro.md"
+    },
+    "steps": [
+      {
+        "title": "問題 1/12",
+        "text": "step1/text.md"
+      },
+      {
+        "title": "問題 2/12",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "問題 3/12",
+        "foreground": "step3/foreground.sh",
+        "background": "step3/background.sh",
+        "text": "step3/text.md"
+      },
+      {
+        "title": "問題 4/12",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "問題 5/12",
+        "text": "step5/text.md"
+      },
+      {
+        "title": "問題 6/12",
+        "text": "step6/text.md",
+        "foreground": "step6/foreground.sh",
+        "background": "step6/background.sh"
+      },
+      {
+        "title": "問題 7/12",
+        "text": "step7/text.md"
+      },
+      {
+        "title": "問題 8/12",
+        "text": "step8/text.md"
+      },
+      {
+        "title": "問題 9/12",
+        "text": "step9/text.md"
+      },
+      {
+        "title": "問題 10/12",
+        "text": "step10/text.md"
+      },
+      {
+        "title": "問題 11/12",
+        "text": "step11/text.md",
+        "verify": "step11/verify.sh"
+      },
+      {
+        "title": "問題 12/12",
+        "text": "step12/text.md",
+        "verify": "step12/verify.sh"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "step3.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "step6.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "webapp.yaml", "target": "/my/location"}
+      ]
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

@@ -1,21 +1,25 @@
-実行中のコンテナにはどのイメージが使用されていますか。
+以下の YAML スニペットに配列のキーはいくつありますか。
 
-- [ ] nginx
-- [ ] redis
-- [ ] tomcat
-- [ ] nginx:alpine
-- [ ] ubunto:18.04
+```
+Fruits:
+  - Orange
+  - Apple
+  - Banana
+Vegetables:
+  - Carrot
+  - CauliFlower
+  - Tomato
+```
 
-<details>
-  <summary>Hints</summary>
+- [ ] 8
+- [ ] 2
+- [ ] 6
+- [ ] 3
 
-`docker container ls` コマンドを実行して IMAGE 列を確認します。
-
-</details>
 
 <details>
   <summary>Answer</summary>
 
-nginx:alpine
+2
 
 </details>

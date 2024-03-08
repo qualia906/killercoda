@@ -15,6 +15,13 @@
 <details>
   <summary>Solution</summary>
 
-`kubectl describe pod newpods-<id>`{{copy}} コマンドを実行し、`containers` セクションを確認します。
+`kubectl describe pod newpods-<id>`{{copy}} コマンドを実行し、`Containers` セクションの `Image` を確認します。
+
+</details>
+
+<details>
+  <summary>Answer</summary>
+
+busybox
 
 </details>

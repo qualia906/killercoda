@@ -5,7 +5,7 @@ Pod の状態が ContainerCreating の場合は、その状態が終了するま
 - [ ] Ready
 - [ ] Succeeded
 - [ ] Failed
-- [ ] Error or Waiting
+- [ ] Waiting
 
 
 <details>

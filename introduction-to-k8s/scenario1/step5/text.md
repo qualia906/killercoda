@@ -25,7 +25,7 @@ Pod の詳細を確認して回答してください。
 <details>
   <summary>Answer</summary>
 
-controlplane
+node01
 
 </details>
 

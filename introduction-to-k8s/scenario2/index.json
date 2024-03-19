@@ -56,14 +56,27 @@
       {
         "title": "問題 11/15",
         "text": "step11/text.md",
-        "verify": "step15/verify.sh"
+        "verify": "step11/verify.sh"
       },
       {
         "title": "問題 12/15",
-        "text": "step15/text.md",
+        "text": "step12/text.md",
         "verify": "step12/verify.sh"
+      },
+      {
+        "title": "問題 13/15",
+        "text": "step13/text.md"
+      },
+      {
+        "title": "問題 14/15",
+        "text": "step14/text.md",
+        "verify": "step14/verify.sh"
+      },
+      {
+        "title": "問題 15/15",
+        "text": "step15/text.md",
+        "verify": "step15/verify.sh"
       }
-      
     ],
     "assets": {
       "host01": [

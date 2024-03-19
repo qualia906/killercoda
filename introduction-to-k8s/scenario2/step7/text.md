@@ -18,7 +18,7 @@ employee:
   age: 24
   address:
     city: shinjuku
-    state: tokyo
+    prefecture: tokyo
     country: japan
 ```{{copy}}
 

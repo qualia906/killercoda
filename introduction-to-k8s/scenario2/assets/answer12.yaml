@@ -10,6 +10,6 @@ employee:
     - month: june
       amount: 1400
     - month: july
-      amount: 2400
+      amount: 1600
     - month: august
-      amount: 3400
+      amount: 2400

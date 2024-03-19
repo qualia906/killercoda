@@ -1,7 +1,7 @@
 `redis-definition.yaml` という名前のマニフェスト ファイルを作成し、以下の設定で Pod を作成してください。
 
-Pod 名：redis
-イメージ：redis123 (不適切なイメージ名ですがこれを指定します)
+Pod 名：redis  
+イメージ：redis123 (不適切なイメージ名ですがこれを指定します)  
 
 
 <details>

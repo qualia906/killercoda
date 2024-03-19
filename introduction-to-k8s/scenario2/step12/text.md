@@ -6,7 +6,7 @@
 |month|amount|
 |---|---|
 |june|1400|
-|july||1600|
+|july|1600|
 |august|2400|
 
 
@@ -27,9 +27,9 @@ employee:
     - month: june
       amount: 1400
     - month: july
-      amount: 2400
+      amount: 1600
     - month: august
-      amount: 3400
+      amount: 2400
 ```{{copy}}
 
 </details>

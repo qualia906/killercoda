@@ -1,0 +1,26 @@
+import sys
+
+# シェルスクリプトからの出力を取得
+output = sys.argv[1]
+
+# 出力を行ごとに分割
+lines = output.split('\n')
+
+# 指定された条件を満たしているかチェック
+command_executed = False
+for line in lines:
+    if not line.strip():
+        # 空行は無視
+        continue
+    parts = line.split()
+    if len(parts) >= 3:
+        name, image, status = parts[0], parts[1], parts[2]
+        if name == 'redis' and image == 'redis' and status == 'Running':
+            command_executed = True
+            break
+
+# 結果に基づいて終了コードを返す
+if command_executed:
+    sys.exit(0)
+else:
+    sys.exit(1)

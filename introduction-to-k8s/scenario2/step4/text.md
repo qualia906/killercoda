@@ -1,4 +1,4 @@
-`/root/playbooks/` ディレクトリの下に `practice.yaml` という yaml ファイルが用意されています。  
+`/root/playbooks/` ディレクトリの下に `question4.yaml` という yaml ファイルが用意されています。  
 このファイルには `property1` というキーと `value1` というバリューが記載されています。  
 このファイルに `property2` というキーと `value2` というバリューを追加してください。
 
@@ -8,14 +8,17 @@
 <details>
   <summary>Hints</summary>
 
-`docker container ls` コマンドを実行して PORTS 列を確認します。  
-右側 (-> の後) に表示されているのがコンテナで公開されているポートです。
+`/root/playbooks/question4.yaml` を編集し、`property2` というキーと `value2` というバリューのペアを追加します。
 
 </details>
 
 <details>
-  <summary>Answer</summary>
+  <summary>Solution</summary>
 
-3456 & 80
+以下の内容にファイルを更新します。
+```
+property1: value1
+property2: value2
+```{{copy}}
 
 </details>

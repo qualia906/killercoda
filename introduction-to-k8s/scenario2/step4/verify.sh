@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ファイル名を直接指定
-file1="/my/location/answer9.yaml"
-file2="/root/playbooks/question9.yaml"
+file1="/my/location/answer4.yaml"
+file2="/root/playbooks/question4.yaml"
 
 # Pythonスクリプトを使用してYAMLファイルを比較
 python /my/location/compare_yaml.py "$file1" "$file2"

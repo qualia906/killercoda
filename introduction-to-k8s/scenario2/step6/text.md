@@ -1,20 +1,23 @@
-以下の条件でコンテナをバックグラウンド (detached モード) で起動してください。
+`/root/playbooks/` ディレクトリの下に `question6.yaml` という yaml ファイルが用意されています。  
+このファイルには `employee` という名前の辞書が保存されています。  
+以下の従業員情報が保存されるように必要なプロパティを追加してください。  
 
-- イメージ：`qualia906/simple-webapp`
-- タグ：`bule`
-- コンテナポート：`8080`
-- ホストポート：`38282`
+|Key/Property|Value|
+|---|---|
+|name|john|
+|gender|male|
+|age|24|
 
-<details>
-  <summary>Hints</summary>
-
-`-p 38282:8080` でポートマッピングを設定します。
-
-</details>
 
 <details>
   <summary>Solution</summary>
 
-`docker container run -d -p 38282:8080 qualia906/simple-webapp:blue`{{execute}} を実行します。 
+`/root/playbooks/question6.yaml` を以下の内容に更新します。
+```
+employee:
+  name: john
+  gender: male
+  age: 24
+```{{copy}}
 
 </details>

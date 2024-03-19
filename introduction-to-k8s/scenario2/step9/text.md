@@ -1,22 +1,32 @@
-以下の条件でコンテナをバックグラウンド (detached モード) で起動してください。
+`/root/playbooks/` ディレクトリの下に `question9.yaml` という yaml ファイルが用意されています。  
+このファイルに `apple` `orange` `banana` についての情報を辞書の配列として保存します。  
+`apple` と同じように `orange` と `banana` について以下の情報を追加してください。
 
-- コンテナ名：`green-app`
-- イメージ：`qualia906/simple-webapp`
-- 環境変数：`APP_COLOR=green`
-- コンテナポート：`8080`
-- ホストポート：`38285`
+|orage||
+|---|---|
+|color|orange|
+|weight|90g|
 
-<details>
-  <summary>Hints</summary>
+|banana||
+|---|---|
+|color|yellow|
+|weight|150g|
 
-`-p 38285:8080` でポートマッピングを設定します。  
-`-e APP_COLOR=green` で環境変数を設定します。
-
-</details>
 
 <details>
   <summary>Solution</summary>
 
-`docker container run -d -p 38285:8080 -e APP_COLOR=green --name green-app qualia906/simple-webapp`{{execute}} を実行します。 
+`/root/playbooks/question9.yaml` を以下の内容に更新します。
+```
+- name: apple
+  color: red
+  weight: 100g
+- name: orange
+  color: orange
+  weight: 90g
+- name: banana
+  color: yellow
+  weight: 150g
+```{{copy}}
 
 </details>

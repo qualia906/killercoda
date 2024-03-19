@@ -1,12 +1,17 @@
 #!/bin/bash
 
-container_id=$(docker ps --filter "name=mysql-db" --format "{{.ID}}")
+# ファイル名を直接指定
+file1="/my/location/answer11.yaml"
+file2="/root/playbooks/question11.yaml"
 
-if [ -z "$container_id" ]; then
+# Pythonスクリプトを使用してYAMLファイルを比較
+python /my/location/compare_yaml.py "$file1" "$file2"
+
+# Pythonスクリプトの終了コードに基づいて処理
+if [ "$?" -eq 0 ]; then
+    echo "YAML files are equivalent."
+    exit 0
+else
+    echo "YAML files are not equivalent."
     exit 1
 fi
-
-python3 /my/location/check_step11.py $container_id
-exit_code=$?
-
-exit $exit_code

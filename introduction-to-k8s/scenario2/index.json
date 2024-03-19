@@ -3,66 +3,91 @@
   "description": "YAML の理解とマニフェスト ファイルによる Pod 操作の演習",
   "details": {
     "intro": {
-      "text": "intro/intro.md",
-      "background": "intro/background.sh"
+      "text": "intro/intro.md"
     },
     "steps": [
       {
-        "title": "問題 1/11",
-        "text": "step1/text.md",
-        "foreground" : "step1/foreground.sh"
+        "title": "問題 1/15",
+        "text": "step1/text.md"
       },
       {
-        "title": "問題 2/11",
+        "title": "問題 2/15",
         "text": "step2/text.md"
       },
       {
-        "title": "問題 3/11",
+        "title": "問題 3/15",
         "text": "step3/text.md"
       },
       {
-        "title": "問題 4/11",
-        "text": "step4/text.md"
+        "title": "問題 4/15",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
       },
       {
-        "title": "問題 5/11",
-        "text": "step5/text.md"
+        "title": "問題 5/15",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
       },
       {
-        "title": "問題 6/11",
+        "title": "問題 6/15",
         "text": "step6/text.md",
         "verify": "step6/verify.sh"
       },
       {
-        "title": "問題 7/11",
-        "text": "step7/text.md"
+        "title": "問題 7/15",
+        "text": "step7/text.md",
+        "verify": "step7/verify.sh"
       },
       {
-        "title": "問題 8/11",
-        "text": "step8/text.md"
+        "title": "問題 8/15",
+        "text": "step8/text.md",
+        "verify": "step8/verify.sh"
       },
       {
-        "title": "問題 9/11",
+        "title": "問題 9/15",
         "text": "step9/text.md",
         "verify": "step9/verify.sh"
       },
       {
-        "title": "問題 10/11",
-        "text": "step10/text.md"
+        "title": "問題 10/15",
+        "text": "step10/text.md",
+        "verify": "step10/verify.sh"
       },
       {
-        "title": "問題 11/11",
+        "title": "問題 11/15",
         "text": "step11/text.md",
-        "verify": "step11/verify.sh"
+        "verify": "step15/verify.sh"
+      },
+      {
+        "title": "問題 12/15",
+        "text": "step15/text.md",
+        "verify": "step12/verify.sh"
       }
       
     ],
     "assets": {
       "host01": [
-        {"file": "step1.sh", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step6.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step11.py", "target": "/my/location", "chmod": "+x"}
+        {"file": "answer4.yaml", "target": "/my/location"},
+        {"file": "answer5.yaml", "target": "/my/location"},
+        {"file": "answer6.yaml", "target": "/my/location"},
+        {"file": "answer7.yaml", "target": "/my/location"},
+        {"file": "answer8.yaml", "target": "/my/location"},
+        {"file": "answer9.yaml", "target": "/my/location"},
+        {"file": "answer10.yaml", "target": "/my/location"},
+        {"file": "answer11.yaml", "target": "/my/location"},
+        {"file": "answer12.yaml", "target": "/my/location"},
+        {"file": "question4.yaml",  "target": "/root/playbooks"},
+        {"file": "question5.yaml",  "target": "/root/playbooks"},
+        {"file": "question6.yaml",  "target": "/root/playbooks"},
+        {"file": "question7.yaml",  "target": "/root/playbooks"},
+        {"file": "question8.yaml",  "target": "/root/playbooks"},
+        {"file": "question9.yaml",  "target": "/root/playbooks"},
+        {"file": "question10.yaml", "target": "/root/playbooks"},
+        {"file": "question11.yaml", "target": "/root/playbooks"},
+        {"file": "question12.yaml", "target": "/root/playbooks"},
+        {"file": "check_step14.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step15.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "compare_yaml.py", "target": "/my/location", "chmod": "+x"}
       ]
     },
     "finish": {
@@ -70,6 +95,6 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }

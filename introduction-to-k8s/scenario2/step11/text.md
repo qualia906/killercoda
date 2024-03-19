@@ -1,20 +1,26 @@
-以下の条件でコンテナをバックグラウンド (detached モード) で起動してください。
+`/root/playbooks/` ディレクトリの下に `question11.yaml` という yaml ファイルが用意されています。  
+このファイルには、設問 10 で更新した内容と同じ内容が含まれています。  
+以下の内容で 2 人目の従業員の情報を追加してください。
 
-- コンテナ名：`mysql-db`
-- イメージ：`mysql`
-- 環境変数：`MYSQL_ROOT_PASSWORD=db_pass123`
+|Key/Property|Value|
+|---|---|
+|name|sarah|
+|gender|female|
+|age|28|
 
-<details>
-  <summary>Hints</summary>
-
-`-e MYSQL_ROOT_PASSWORD=db_pass123` で環境変数を設定します。
-
-</details>
 
 <details>
   <summary>Solution</summary>
 
-`docker run -d -e MYSQL_ROOT_PASSWORD=db_pass123 --name mysql-db mysql`{{execute}} を実行します。
-コンテナ内から環境変数を確認するには `docker exec -it mysql-db env`{{execute}}を実行します。 
+`/root/playbooks/question11.yaml` を以下の内容に更新します。
+```
+employees:
+  - name: john
+    gender: male
+    age: 24
+  - name: sarah
+    gender: female
+    age: 28
+```{{copy}}
 
 </details>

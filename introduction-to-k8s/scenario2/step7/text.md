@@ -1,28 +1,25 @@
-実行したコンテナに設定されている環境変数 `APP_COLOR` の値は以下のどれですか。
+`/root/playbooks/` ディレクトリの下に `question7.yaml` という yaml ファイルが用意されています。  
+このファイルの従業員情報に、`name` や `gender` 以外に以下の情報を保存するように、`address` という辞書を追加してください。
 
-- [ ] red
-- [ ] blue
-- [ ] green
-- [ ] pink
-
-<details>
-  <summary>Hints</summary>
-
-まず `docker container ls` コマンドを実行し、コンテナ ID かコンテナ名を確認します。  
-そして `docker container inspect <CONTAINER_ID | CONTAINER_NAME>`{{copy}} コマンドを実行し `Env` セクションを確認します。
-
-</details>
+|Key/Property|Value|
+|---|---|
+|city|shinjuku|
+|prefecture|tokyo|
+|country|japan|
 
 <details>
   <summary>Solution</summary>
 
-`docker container inspect <CONTAINER_ID | CONTAINER_NAME> | grep -A 10 Env`{{copy}} を実行します。
-
-</details>
-
-<details>
-  <summary>Answer</summary>
-
-blue
+`/root/playbooks/question7.yaml` を以下の内容に更新します。
+```
+employee:
+  name: john
+  gender: male
+  age: 24
+  address:
+    city: shinjuku
+    state: tokyo
+    country: japan
+```{{copy}}
 
 </details>

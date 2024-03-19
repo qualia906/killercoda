@@ -1,22 +1,19 @@
-**ホスト**で公開されているポートは以下のどれですか。
+`/root/playbooks/` ディレクトリの下に `question5.yaml` という yaml ファイルが用意されています。  
+このファイルに以下の情報が保存されるように、必要なプロパティを追加してください。  
 
-- [ ] 38080 & 3456
-- [ ] 80 & 80
-- [ ] 22 & 3456
-- [ ] 3456 & 3456
-- [ ] 3456 & 80
+- name = apple
+- color = red
+- weight = 90g
 
-<details>
-  <summary>Hints</summary>
-
-`docker container ls` コマンドを実行して PORTS 列を確認します。  
-左側 (-> の前) に表示されているのがホストで公開されているポートです。
-
-</details>
 
 <details>
-  <summary>Answer</summary>
+  <summary>Solution</summary>
 
-38080 & 3456
+`/root/playbooks/question5.yaml` を以下の内容に更新します。
+```
+name: apple
+color: red
+weight: 90g
+```{{copy}}
 
 </details>

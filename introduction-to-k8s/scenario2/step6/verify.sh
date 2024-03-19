@@ -1,14 +1,17 @@
 #!/bin/bash
 
-# Verify container image
-container_id=$(docker ps --filter "ancestor=qualia906/simple-webapp:blue" --format "{{.ID}}")
+# ファイル名を直接指定
+file1="/my/location/answer6.yaml"
+file2="/root/playbooks/question6.yaml"
 
-if [ -z "$container_id" ]; then
+# Pythonスクリプトを使用してYAMLファイルを比較
+python /my/location/compare_yaml.py "$file1" "$file2"
+
+# Pythonスクリプトの終了コードに基づいて処理
+if [ "$?" -eq 0 ]; then
+    echo "YAML files are equivalent."
+    exit 0
+else
+    echo "YAML files are not equivalent."
     exit 1
 fi
-
-# Invoke Python script to check port configuration and detached mode
-python3 /my/location/check_step6.py $container_id
-exit_code=$?
-
-exit $exit_code

@@ -1,6 +1,6 @@
 `/root/manifests/` 以下に `deployment-definition-2.yaml` を作成して、以下の設定の Deployment を作成してください。
 
-- Deployment 名: `deploy-2`
+- Deployment 名: `deployment-2`
 - イメージ: `httpd:2.4-alpine`
 - レプリカ数: 3
 

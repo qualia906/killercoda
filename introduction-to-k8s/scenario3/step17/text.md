@@ -1,4 +1,4 @@
-Namespace `dev` に以下の設定で `deploy-3` という名前の Deployment を作成してください。  
+Namespace `dev` に以下の設定で `deployment-3` という名前の Deployment を作成してください。  
 
 - Deployment 名： `deploy-3`  
 - イメージ： `redis`  

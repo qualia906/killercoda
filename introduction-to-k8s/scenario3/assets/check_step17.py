@@ -13,7 +13,7 @@ for line in lines:
         # 空行は無視
         continue
     name, namespace, image, replicas = line.split()
-    if name == 'deploy-3' and namespace == 'dev' and image == 'redis' and int(replicas) == 3:
+    if name == 'deployment-3' and namespace == 'dev' and image == 'redis' and int(replicas) == 3:
         command_executed = True
         break
 

@@ -13,7 +13,7 @@ for line in lines:
         # 空行は無視
         continue
     name, image, replicas = line.split()
-    if name == 'webapp' and image == 'qualia906/webapp' and int(replicas) == 3:
+    if name == 'webapp' and image == 'qualia906/simple-webapp' and int(replicas) == 3:
         command_executed = True
         break
 

@@ -4,13 +4,16 @@
 - イメージ: `httpd:2.4-alpine`
 - レプリカ数: 3
 
+> Deployment の状態が `Available` になったことを確認してから [**CHECK**] をクリックしてください。`
 > Pod の状態がすべて `Running` になったことを確認してから [**CHECK**] をクリックしてください。
 
 <details>
   <summary>Hints</summary>
 
 前の問題で使用した `deployment-definition-1.yaml` をコピーして必要な変更を加えることでマニフェスト ファイルを作成できます。  
-または、`kubectl create deployment deploy-2 --image httpd:2.4-alpine --replicas 3 --dry-run=client -o yaml > /root/manifests/deployment-definition-2.yaml` コマンドを使用してマニフェスト ファイルを作成することもできます。
+この場合、Deployment 名と合わせて忘れずに `matchLabels` と `labels` も変更します。  
+
+または、`kubectl create deployment deployment-2 --image httpd:2.4-alpine --replicas 3 --dry-run=client -o yaml > /root/manifests/deployment-definition-2.yaml` コマンドを使用してマニフェスト ファイルを作成することもできます。
 
 </details>
 

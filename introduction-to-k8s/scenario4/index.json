@@ -1,53 +1,57 @@
 {
-  "title": "4. Docker レジストリ",
-  "description": "Docker レジストリの演習",
+  "title": "4. Service",
+  "description": "ネットワーキングと Service の演習",
   "details": {
     "intro": {
-      "text": "intro/intro.md"
+      "text": "intro/intro.md",
+      "background": "intro/background.sh"
     },
     "steps": [
       {
-        "title": "問題 1/8",
+        "title": "問題 1/9",
         "text": "step1/text.md"
       },
       {
-        "title": "問題 2/8",
+        "title": "問題 2/9",
         "text": "step2/text.md"
       },
       {
-        "title": "問題 3/8",
+        "title": "問題 3/9",
         "text": "step3/text.md"
       },
       {
-        "title": "問題 4/8",
-        "text": "step4/text.md",
-        "verify": "step4/verify.sh"
+        "title": "問題 4/9",
+        "text": "step4/text.md"
       },
       {
-        "title": "問題 5/8",
-        "text": "step5/text.md",
-        "verify": "step5/verify.sh"
+        "title": "問題 5/9",
+        "text": "step5/text.md"
       },
       {
-        "title": "問題 6/8",
+        "title": "問題 6/9",
         "text": "step6/text.md",
-        "verify": "step6/verify.sh"
+        "background": "step6/background.sh"
       },
       {
-        "title": "問題 7/8",
+        "title": "問題 7/9",
         "text": "step7/text.md",
         "verify": "step7/verify.sh"
       },
       {
         "title": "問題 8/8",
-        "text": "step8/text.md",
-        "verify": "step8/verify.sh"
+        "text": "step8/text.md"
+      },
+      {
+        "title": "問題 9/9",
+        "text": "step9/text.md",
+        "verify": "step9/verify.sh"
       }
     ],
     "assets": {
       "host01": [
-        {"file": "check_step4.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step6.py", "target": "/my/location", "chmod": "+x"}
+        {"file": "check_step7.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "service-definition-1.yaml", "target": "/root/manifests"}
       ]
     },
     "finish": {
@@ -55,6 +59,6 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }

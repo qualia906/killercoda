@@ -1,9 +1,16 @@
-`registry:2` 以外のイメージをこのホスト上からすべて削除してください。  
+この `simple-webapp` アプリケーションは `8080` 番ポートでリクエストを受け付けます。  
+以下のリンクからこのノードの `8080` 番ポートにアクセスできます。  
+{{TRAFFIC_HOST1_80}}  
 
+アプリケーションにアクセスできますか。  
+
+- [ ] YES
+- [ ] NO
 
 <details>
-  <summary>Hints</summary>
+  <summary>Answer</summary>
 
-`docker image prune -a` を実行することで、コンテナで未使用のイメージをすべて削除することができます。
+NO  
+> アプリケーションにアクセスするための Service が構成されていないためアクセスできません。
 
 </details>

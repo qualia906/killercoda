@@ -1,17 +1,21 @@
-デフォルトで Docker Engine はどのコンテナ レジストリからイメージを取得しますか。
+デフォルトの Service `kubernetes` のタイプは何ですか。
 
-- [ ] Google Artifact Registry
-- [ ] Docker Hub
-- [ ] Amazon Elastic Container Registry
-- [ ] Azure Container Registry
-- [ ] On-premises Registry
+- [ ] ClusterIP
+- [ ] NodePort
+- [ ] LoadBalancer
+- [ ] ExternalName
+- [ ] None
 
+<details>
+  <summary>Hints</summary>
+
+`kubectl get services` コマンドを実行して、`TYPE` 列を確認します。
+
+</details>
 
 <details>
   <summary>Answer</summary>
 
-Docker Hub  
-
-Docker Hub は Docker Inc. によってホストされ提供されている Docker レジストリのサービスです。
+ClusterIP
 
 </details>

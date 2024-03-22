@@ -4,7 +4,7 @@
 deployment_output=$(kubectl get deployment deployment-1 -o custom-columns=NAME:.metadata.name,IMAGE:.spec.template.spec.containers[*].image,REPLICAS:.spec.replicas --no-headers)
 
 # 関連する Pod の状態を取得
-pods_output=$(kubectl get pods -l name=busybox-pod -o custom-columns=NAME:.metadata.name,STATUS:.status.phase --no-headers)
+pods_output=$(kubectl get pods -l name=deployment-1 -o custom-columns=NAME:.metadata.name,STATUS:.status.phase --no-headers)
 
 # Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
 python3 /my/location/check_step11.py "$deployment_output" "$pods_output"

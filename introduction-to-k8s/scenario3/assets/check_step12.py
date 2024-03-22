@@ -6,7 +6,7 @@ pods_output = sys.argv[2]
 
 # Deployment の条件を確認
 name, image, replicas = deployment_output.split()
-if not (name == 'deployment-2' and image == 'httpd:2.4-alpine' and int(replicas) == 3):
+if not (name == 'deployment-2' and image == 'httpd:2.4-alpine' and int(replicas) == 3):    
     sys.exit(1)  # 条件を満たさない場合は終了コード1で終了
 
 # Pod の状態を確認

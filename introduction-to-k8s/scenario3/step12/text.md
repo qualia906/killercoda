@@ -21,19 +21,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: httpd-frontend
+  name: deployment-2
 spec:
   replicas: 3
   selector:
     matchLabels:
-      name: httpd-frontend
+      name: deployment-2
   template:
     metadata:
       labels:
-        name: httpd-frontend
+        name: deployment-2
     spec:
       containers:
-      - name: httpd-frontend
+      - name: httpd-container
         image: httpd:2.4-alpine
 ```
 

@@ -1,4 +1,4 @@
-namespace `research` には何個の Pod が存在しますか。
+Namespace `research` には何個の Pod が存在しますか。
 
 - [ ] 0
 - [ ] 1

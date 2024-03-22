@@ -1,4 +1,4 @@
-この環境に `dev` という名前の namespace を作成してください。  
+この環境に `dev` という名前の Namespace を作成してください。  
 
 
 <details>

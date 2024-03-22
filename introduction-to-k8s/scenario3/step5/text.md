@@ -1,4 +1,4 @@
-現在この環境には何個の ReplicaSet が存在しますか。(namespace `default` について)
+現在この環境には何個の ReplicaSet が存在しますか。(Namespace `default` について)
 
 - [ ] 0
 - [ ] 1

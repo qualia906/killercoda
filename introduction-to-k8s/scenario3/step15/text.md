@@ -1,4 +1,4 @@
-namespace `finance` に以下の設定で Pod を 1 つ作成してください。  
+Namespace `finance` に以下の設定で Pod を 1 つ作成してください。  
 
 - Pod 名: `pod-1`
 - イメージ: `redis`

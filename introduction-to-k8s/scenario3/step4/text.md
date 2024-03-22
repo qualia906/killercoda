@@ -1,6 +1,6 @@
 (※ スクリプトの実行が完了してから開始してください)
 新たな Deployment を作成しました。  
-現在この環境には何個の Deployment が存在しますか？ (namespace `default` について)
+現在この環境には何個の Deployment が存在しますか？ (Namespace `default` について)
 
 - [ ] 0
 - [ ] 1

@@ -4,6 +4,8 @@
 - イメージ: `httpd:2.4-alpine`
 - レプリカ数: 3
 
+> Pod の状態がすべて `Running` になったことを確認してから [**CHECK**] をクリックしてください。
+
 <details>
   <summary>Hints</summary>
 

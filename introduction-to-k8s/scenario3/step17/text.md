@@ -1,6 +1,6 @@
 Namespace `dev` に以下の設定で `deployment-3` という名前の Deployment を作成してください。  
 
-- Deployment 名： `deploy-3`  
+- Deployment 名： `deployment-3`  
 - イメージ： `redis`  
 - replicas: `3`  
 
@@ -15,6 +15,6 @@ Namespace `dev` に以下の設定で `deployment-3` という名前の Deployme
 <details>
   <summary>Solution</summary>
 
-`kubectl create deployment deploy-3 -n dev --image redis --replicas 3`{{execute}} を実行します。
+`kubectl create deployment deployment-3 -n dev --image redis --replicas 3`{{execute}} を実行します。
 
 </details>

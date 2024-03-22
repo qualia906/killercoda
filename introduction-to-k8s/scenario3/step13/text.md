@@ -8,7 +8,8 @@
 <details>
   <summary>Hints</summary>
 
-`kubectl get ns` コマンドを使用します。 
+`kubectl get namespaces` コマンドを使用します。  
+短縮名を使用して `kubectl get ns` と書くこともできます。
 
 </details>
 

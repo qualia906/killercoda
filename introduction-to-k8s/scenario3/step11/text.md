@@ -4,6 +4,7 @@
 
 - Deployment 名：deployment-1
 
+> Pod の状態がすべて `Running` になったことを確認してから [**CHECK**] をクリックしてください。
 
 <details>
   <summary>Hints</summary>

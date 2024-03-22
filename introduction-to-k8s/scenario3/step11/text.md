@@ -2,7 +2,7 @@
 ただし、この `deployment-definition-1.yaml` にはいくつかの誤りが含まれています。  
 誤りを修正した上で、このマニフェスト ファイルを使用して正常に実行される Deployment を作成してください。
 
-- Deployment 名：deploy-1
+- Deployment 名：deployment-1
 
 
 <details>

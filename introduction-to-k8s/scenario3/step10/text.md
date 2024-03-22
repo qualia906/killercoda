@@ -1,8 +1,8 @@
 命令型コマンドを使用して、以下の設定で Deployment を作成してください。
 
-Deployment 名：webapp
-イメージ：qualia906/webapp
-レプリカ数：3
+- Deployment 名：`webapp`
+- イメージ：`qualia906/simple-webapp`
+- レプリカ数：`3`
 
 <details>
   <summary>Hints</summary>

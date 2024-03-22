@@ -1,6 +1,5 @@
 #!/bin/bash
 
-kubectl create ns sales
 kubectl create ns marketing
 kubectl create ns finance
 kubectl create ns prod

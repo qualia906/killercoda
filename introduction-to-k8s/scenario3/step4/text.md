@@ -1,24 +1,24 @@
-アプリケーションのコードを用意しました。  
-`Dockerfile` で指定されているベースイメージは以下のどれですか。  
-`/root/color-webapp` ディレクトリの `Dockerfile` を調べて回答してください。
+(※ スクリプトの実行が完了してから開始してください)
+新たな Deployment を作成しました。  
+現在この環境には何個の Deployment が存在しますか？ (namespace `default` について)
 
-- [ ] rhel:3.6
-- [ ] python:3.6
-- [ ] ubuntu:latest
-- [ ] centos:7
-- [ ] python
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 
 <details>
   <summary>Hints</summary>
 
-`/root/color-webapp/Dockerfile` を参照して `FROM` のアーギュメントを確認します。
+`kubectl get deployments` コマンドを使用します。  
+短縮名を使用して `kubectl get deploy` と書くこともできます。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-python:3.6
+1
 
 </details>

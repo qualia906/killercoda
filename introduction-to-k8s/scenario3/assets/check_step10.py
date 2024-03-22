@@ -12,8 +12,8 @@ for line in lines:
     if not line.strip():
         # 空行は無視
         continue
-    name, namespace, image = line.split()
-    if name == 'pod-1' and namespace == 'finance' and image == 'redis':
+    name, image, replicas = line.split()
+    if name == 'webapp' and image == 'qualia906/webapp' and int(replicas) == 3:
         command_executed = True
         break
 

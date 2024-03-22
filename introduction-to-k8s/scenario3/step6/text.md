@@ -1,20 +1,28 @@
-この `Dockerfile` からビルドされたイメージを使用してコンテナが起動したとき、コンテナ内のアプリケーションを実行するのに使用されるコマンドは以下のどれですか。
+作成された Deployment `frontend-dep` のレプリカ数はいくつですか。
 
-- [ ] docker run app
-- [ ] pip install flask
-- [ ] app.exe
-- [ ] python app.py
+- [ ] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
 
 <details>
   <summary>Hints</summary>
 
-`/root/color-webapp/Dockerfile` を参照して `ENTRYPOINT` のアーギュメントを確認します。
+`kubectl get deployments` あるいは `kubectl describe deployment` コマンドを使用して確認できます。
+また、`kubectl get pods` コマンドを使用して実際の Pod 数を確認することもできます。
+ 
+</details>
 
+<details>
+  <summary>Solution</summary>
+
+`kubectl describe deployment frontend-dep | grep Replicas`{{execute}} を実行します。 
+ 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-python app.py
+4
 
 </details>

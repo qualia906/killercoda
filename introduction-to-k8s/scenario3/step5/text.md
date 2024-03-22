@@ -1,22 +1,21 @@
-アプリケーションのコードはコンテナのどこにコピーされますか。
-`/root/color-webapp` ディレクトリの `Dockerfile` を調べて回答してください。
+現在この環境には何個の ReplicaSet が存在しますか。(namespace `default` について)
 
-- [ ] /var
-- [ ] /root
-- [ ] /tmp
-- [ ] /opt 
-
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 <details>
   <summary>Hints</summary>
 
-`/root/color-webapp/Dockerfile` を参照して `COPY` のアーギュメントを確認します。
+`kubectl get replicasets` コマンドを使用します。  
+短縮名を使用して `kubectl get rs` と書くこともできます。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-/opt
+1
 
 </details>

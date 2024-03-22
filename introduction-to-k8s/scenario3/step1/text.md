@@ -1,21 +1,21 @@
-(※ スクリプトの実行が完了してから開始してください)  
-現在このホストには何個のイメージが存在しますか。
+現在この環境には何個の Pod が存在しますか。(namespace `default` について)
 
-- [ ] 7
-- [ ] 3
-- [ ] 4
 - [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 <details>
   <summary>Hints</summary>
 
-`docker image ls` コマンドを使用します。
+`kubectl get pods` コマンドを使用します。  
+短縮名を使用して `kubectl get po` と書くこともできます。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-4
+0
 
 </details>

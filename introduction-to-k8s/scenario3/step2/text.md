@@ -1,21 +1,21 @@
-`ubuntu` イメージのサイズは以下のどれですか。
+現在この環境には何個の ReplicaSet が存在しますか。(namespace `default` について)
 
-- [ ] 5.58MB
-- [ ] 64GB
-- [ ] 77.9MB
-- [ ] 1.95MB
-- [ ] 1.2GB
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 <details>
   <summary>Hints</summary>
 
-`docker image ls` コマンドを実行して SIZE 列を確認します。
+`kubectl get replicasets` コマンドを使用します。  
+短縮名を使用して `kubectl get rs` と書くこともできます。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-77.9MB
+0
 
 </details>

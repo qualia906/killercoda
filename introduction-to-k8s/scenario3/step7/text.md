@@ -1,20 +1,21 @@
-コンテナのアプリケーションは何番ポートを使用しますか。(コンテナは何番ポートを公開しますか)
+Deployment `frontend-dep` の Pod のうち `READY` 状態にある Pod は何個ですか。
+(Pod の状態がまだ `ContainerCreating` の場合は、その状態から変わるまで待って回答してください)
 
-- [ ] 8080
-- [ ] 5000
-- [ ] 80
-- [] 0.0.0.0
+- [ ] 0
+- [ ] 2
+- [ ] 3
+- [ ] 4
 
 <details>
   <summary>Hints</summary>
 
-`/root/color-webapp/Dockerfile` を参照して `EXPOSE` のアーギュメントを確認します。
+`kubectl get deployments` コマンドを実行して、`READY` 列を確認します。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-8080
+0
 
 </details>

@@ -1,23 +1,21 @@
-(※ スクリプトの実行が完了してから開始してください)  
-いま新しいイメージを pull しました。  
-新たに pull された `nginx` イメージのタグは以下のどれですか。
+現在この環境には何個の Deployment が存在しますか。(namespace `default` について)
 
-- [ ] 1.14
-- [ ] 11cd0b38bc3c
-- [ ] 1.10.1
-- [ ] 1.14-alpine
-- [ ] perl
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 <details>
   <summary>Hints</summary>
 
-`docker image ls` コマンドを実行して IMAGE 列を確認します。  
+`kubectl get deployments` コマンドを使用します。  
+短縮名を使用して `kubectl get deploy` と書くこともできます。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-1.14-alpine
+0
 
 </details>

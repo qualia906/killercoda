@@ -1,6 +1,6 @@
 {
-  "title": "3. Docker イメージのビルド",
-  "description": "Docker コンテナイメージの演習",
+  "title": "3. Deployment",
+  "description": "Deployment と Namespace の演習",
   "details": {
     "intro": {
       "text": "intro/intro.md",
@@ -8,86 +8,92 @@
     },
     "steps": [
       {
-        "title": "問題 1/15",
-        "text": "step1/text.md",
-        "foreground" : "step1/foreground.sh"
+        "title": "問題 1/17",
+        "text": "step1/text.md"
       },
       {
-        "title": "問題 2/15",
+        "title": "問題 2/17",
         "text": "step2/text.md"
       },
       {
-        "title": "問題 3/15",
-        "text": "step3/text.md",
-        "foreground" : "step3/foreground.sh",
-        "background" : "step3/background.sh"
+        "title": "問題 3/17",
+        "text": "step3/text.md"
       },
       {
-        "title": "問題 4/15",
-        "text": "step4/text.md"
+        "title": "問題 4/17",
+        "text": "step4/text.md",
+        "foreground": "step4/foreground.sh",
+        "background": "step4/background.sh"
       },
       {
-        "title": "問題 5/15",
+        "title": "問題 5/17",
         "text": "step5/text.md"
       },
       {
-        "title": "問題 6/15",
+        "title": "問題 6/17",
         "text": "step6/text.md"
       },
       {
-        "title": "問題 7/15",
+        "title": "問題 7/17",
         "text": "step7/text.md"
       },
       {
-        "title": "問題 8/15",
-        "text": "step8/text.md",
-        "verify": "step8/verify.sh"
+        "title": "問題 8/17",
+        "text": "step8/text.md"
       },
       {
-        "title": "問題 9/15",
-        "text": "step9/text.md",
-        "verify": "step9/verify.sh"
+        "title": "問題 9/17",
+        "text": "step9/text.md"
       },
       {
-        "title": "問題 10/15",
-        "text": "step10/text.md"
+        "title": "問題 10/17",
+        "text": "step10/text.md",
+        "verify": "step10/verify.sh"
       },
       {
-        "title": "問題 11/15",
-        "text": "step11/text.md"
+        "title": "問題 11/17",
+        "text": "step11/text.md",
+        "verify": "step11/verify.sh"
       },
       {
-        "title": "問題 12/15",
-        "text": "step12/text.md"
+        "title": "問題 12/17",
+        "text": "step12/text.md",
+        "verify": "step12/verify.sh"
       },
       {
-        "title": "問題 13/15",
-        "text": "step13/text.md",
-        "verify": "step13/verify.sh"
+        "title": "問題 13/17",
+        "text": "step13/text.md"
       },
       {
-        "title": "問題 14/15",
+        "title": "問題 14/17",
         "text": "step14/text.md"
       },
       {
-        "title": "問題 15/15",
+        "title": "問題 15/17",
         "text": "step15/text.md",
         "verify": "step15/verify.sh"
+      },
+      {
+        "title": "問題 16/17",
+        "text": "step16/text.md",
+        "verify": "step16/verify.sh"
+      },
+      {
+        "title": "問題 17/17",
+        "text": "step17/text.md",
+        "verify": "step17/verify.sh"
       }
     ],
     "assets": {
       "host01": [
-        {"file": "color-webapp/Dockerfile", "target": "/root/color-webapp"},
-        {"file": "color-webapp/app.py", "target": "/root/color-webapp"},
-        {"file": "color-webapp/requirements.txt", "target": "/root/color-webapp"},
-        {"file": "color-webapp/templates/hello.html", "target": "/root/color-webapp/templates"},
-        {"file": "step1.sh", "target": "/my/location", "chmod": "+x"},
-        {"file": "step3.sh", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step8.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step13.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "Dockerfile-ubuntu", "target": "/root"},
-        {"file": "check_step15.py", "target": "/my/location", "chmod": "+x"}
+        {"file": "step4.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "step13.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "deployment-definition-1.yaml", "target": "/root/manifests"},
+        {"file": "check_step10.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step11.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step12.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step15.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step17.py", "target": "/my/location", "chmod": "+x"}
       ]
     },
     "finish": {
@@ -95,6 +101,6 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }

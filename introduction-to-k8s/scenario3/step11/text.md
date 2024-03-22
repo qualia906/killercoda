@@ -1,34 +1,48 @@
-ベースイメージであるイメージ `python:3.6` で使用されている OS は以下のどれですか。  
-必要があれば新たにコンテナを起動しても構いません。
+`/root/manifests/` ディレクトリ以下にマニフェスト ファイル `deployment-definition-1.yaml` を用意しました。  
+ただし、この `deployment-definition-1.yaml` にはいくつかの誤りが含まれています。  
+誤りを修正した上で、このマニフェスト ファイルを使用して正常に実行される Deployment を作成してください。
 
-- [ ] centos
-- [ ] debian
-- [ ] rhel
-- [ ]ubuntu
+- Deployment 名：deploy-1
 
 
 <details>
   <summary>Hints</summary>
 
-コンテナ内で `cat /etc/*release*` を実行することで OS を確認できます。
-`color-webapp` のコンテナがすでに停止している場合は、イメージ `python:3.6` から新たにコンテナを起動して確認します。  
-`color-webapp` のコンテナが起動している場合は、`docker container exec` コマンドを使用してコンテナ内で `cat /etc/*release*` を実行することもできます。
+誤りを含んだマニフェスト ファイルを使用して Deployment を作成しようとする際に表示されるエラーメッセージから、誤りの内容を推測することができます。  
+マニフェスト ファイルから Deployment などのオブジェクトを作成する場合には `kubectl apply -f` コマンドを使用します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-以下のどちらかを実行します。
+`deployment-definition-1.yaml` の `kind` と `image` を修正し以下のように更新します。
 
-- `docker container run python:3.6 cat /etc/*release*`{{exec}}
-- `docker container exec <CONTAINER_ID | CONTAINER_NAME> cat /etc/*release*`{{copy}}
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: busybox-pod
+  template:
+    metadata:
+      labels:
+        name: busybox-pod
+    spec:
+      containers:
+      - name: busybox-container
+        image: busybox
+        command:
+        - sh
+        - "-c"
+        - echo Hello Kubernetes! && sleep 3600
 
-</details>
+```
 
-<details>
-  <summary>Answer</summary>
-
-debian
+更新したら `kubectl apply -f /root/manifests/deployment-definition-1.yaml`{{execute}} を実行します。
 
 </details>

@@ -1,24 +1,29 @@
-この `Dockerfile` とアプリケーションのコードから、`color-webapp` という名前のイメージをビルドしてください。タグは指定しないでください。
+Deployment `frontend-dep` の Pod では何のイメージが使用されていますか。
 
-- Dockerfile：`/root/color-webapp/Dockerfile`
-- イメージ名：`color-webapp`
+- [ ] nginx
+- [ ] frontend
+- [ ] busybox
+- [ ] busybox999
+
 
 <details>
   <summary>Hints</summary>
 
-`docker image build` コマンドを使用します。`-t` オプションでイメージ名を指定します。  
-コマンドを実行するために適切なディレクトリに移動することを忘れないようにしてください。
+`kubectl describe` コマンドを使用して Deployment あるいは Pod のイメージを確認します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-以下を実行します。
+`kubectl describe deployment frontend-dep | grep Image`{{execute}} を実行します。  
+または、`kubectl describe pod <POD_NAME>`{{copy}} を実行して `Image` フィールドを確認します。
 
-```
-cd /root/color-webapp
-docker image build -t color-webapp .
-```{{execute}}
+</details>
+
+<details>
+  <summary>Answer</summary>
+
+busybox999
 
 </details>

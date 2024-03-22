@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# 特定のnamespaceのPodの詳細を取得
-output=$(kubectl get pods -n finance --output=custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[*].image --no-headers)
+# Deployment の詳細を取得（Namespace dev）
+output=$(kubectl get deployment deploy-3 -n dev -o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.template.spec.containers[*].image,REPLICAS:.spec.replicas --no-headers)
 
 # Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
-python3 /my/location/check_step15.py "$output"
+python3 /my/location/check_step17.py "$output"
 result=$?
 
 # Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定

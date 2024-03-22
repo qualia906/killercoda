@@ -1,19 +1,20 @@
-ビルドしたイメージ `color-webapp` を使用して、以下の設定でコンテナを起動してください。
+Deployment `frontend-dep` の Pod が `READY` 状態にならない原因は何ですか。
 
-- イメージ：`color-webapp`
-- コンテナポート：`8080`
-- ホストポート：`8282`
+- [ ] Deployment が正常に作成されなかった
+- [ ] Kubernetes クラスタに異常がある
+- [ ] busybox999 というイメージが存在しない
+- [ ] イメージ内のアプリケーションにいじょうがある
 
 <details>
   <summary>Hints</summary>
 
-`-p 8282:8080` でポートマッピングを設定します。  
+`kubectl describe pod` コマンドを実行し、`Events` フィールドを確認します。
 
 </details>
 
 <details>
-  <summary>Solution</summary>
+  <summary>Answer</summary>
 
-`docker container run -d -p 8282:8080 color-webapp`{{execute}} を実行します。 
+busybox999 というイメージが存在しない
 
 </details>

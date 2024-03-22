@@ -1,4 +1,19 @@
-コンテナのウェブ アプリケーションが動作していることを確認します。
-以下からホストポートにアクセスしてください。
+命令型コマンドを使用して、以下の設定で Deployment を作成してください。
 
-{{TRAFFIC_HOST1_8282}}
+Deployment 名：webapp
+イメージ：qualia906/webapp
+レプリカ数：3
+
+<details>
+  <summary>Hints</summary>
+
+`kubectl create deployment` コマンドを使用します。
+
+</details>
+
+<details>
+  <summary>Solution</summary>
+
+`kubectl create deployment webapp --image=qualia906/webapp --replicas=3`{{execute}} を実行します。
+
+</details>

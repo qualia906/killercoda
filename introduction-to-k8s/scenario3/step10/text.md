@@ -14,6 +14,6 @@
 <details>
   <summary>Solution</summary>
 
-`kubectl create deployment webapp --image=qualia906/webapp --replicas=3`{{execute}} を実行します。
+`kubectl create deployment webapp --image=qualia906/simple-webapp --replicas=3`{{execute}} を実行します。
 
 </details>

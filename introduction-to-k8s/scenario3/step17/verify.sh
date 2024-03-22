@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Deployment の詳細を取得（Namespace dev）
-output=$(kubectl get deployment deploy-3 -n dev -o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.template.spec.containers[*].image,REPLICAS:.spec.replicas --no-headers)
+output=$(kubectl get deployment deployment-3 -n dev -o custom-columns=NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.template.spec.containers[*].image,REPLICAS:.spec.replicas --no-headers)
 
 # Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
 python3 /my/location/check_step17.py "$output"

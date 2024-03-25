@@ -1,4 +1,6 @@
 Deployment `frontend` のアプリケーションのバージョンを Version 1 にロールバックしてください。
+以下のリンクからアプリケーションにアクセスして、ロールバックされたことを確認してください。
+{{TRAFFIC_HOST1_30080}}
 
 <details>
   <summary>Hints</summary>

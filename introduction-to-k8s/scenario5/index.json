@@ -10,7 +10,7 @@
       {
         "title": "問題 1/16",
         "text": "step1/text.md",
-        "foreground": "step1/background.sh"
+        "foreground": "step1/foreground.sh"
       },
       {
         "title": "問題 2/16",

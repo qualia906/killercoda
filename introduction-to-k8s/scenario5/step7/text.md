@@ -1,23 +1,3 @@
-コンテナ `alpine-1` を削除してください。
-
-
-<details>
-  <summary>Hints</summary>
-
-まず `docker container stop` でコンテナを停止します。
-そして `docker container rm` でコンテナを削除します。
-
-</details>
-
-
-<details>
-  <summary>Solution</summary>
-
-以下を実行します。
-
-```
-docker container stop alpine-1
-docker container rm alpine-1
-```{{execute}}
-
-</details>
+再びアプリケーションにアクセスして、アプリケーションが Version 2 にアップデートされたことを確認してください。  
+まだ、Rolling Update が実行中の場合、Version 1 が表示されることがありますが、ブラウザを何度かリロードすると Version 2 が表示されるようになります。
+{{TRAFFIC_HOST1_30080}}

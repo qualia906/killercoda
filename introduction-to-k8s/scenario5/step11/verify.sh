@@ -1,16 +1,17 @@
 #!/bin/bash
 
-# コンテナ名とファイルパスを指定
-container_name="nginx-1"
-file_path="/usr/local/share/my-volume/data.txt"
-expected_text="My important data"
+# Service の詳細を取得
+output=$(kubectl get service frontend-service --namespace default -o json)
 
-# コンテナ内のファイルからテキストを読み取り、期待するテキストが含まれているか確認
-if docker exec $container_name cat $file_path | grep -qF "$expected_text"; then
-    echo "ファイルに期待するテキストが正しく書き込まれています。"
+# Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
+python3 check_frontend_service.py "$output"
+result=$?
+
+# Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定
+if [ $result -eq 0 ]; then
+    echo "条件を満たしています。"
     exit 0
 else
-    echo "ファイルに期待するテキストが書き込まれていません。"
+    echo "条件を満たしていません。"
     exit 1
 fi
-

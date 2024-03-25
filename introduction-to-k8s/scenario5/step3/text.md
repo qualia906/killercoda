@@ -1,17 +1,29 @@
-いま起動したコンテナ内で `touch newfile.txt` コマンドを実行して新しいファイルを作成してください。
+Deployment `frontend` で使用されているコンテナイメージはどれですか。
 
+- [ ] webapp
+- [ ] frontend
+- [ ] qualia906/webapp-color:v2
+- [ ] qualia906/webapp-color:v1
+- [ ] simple-webapp
 
 
 <details>
   <summary>Hints</summary>
 
-`docker container exec` コマンドを使用してコンテナ内で `touch newfile.txt` を実行します。
+`kubectl describe deployment` コマンドを使用して、使われているイメージを確認します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-`docker container exec alpine-1 touch newfile.txt`{{execute}} コマンドを実行します
+`kubectl describe deployment frontend | grep Image`{{execute}} コマンドを実行します。
+
+</details>
+
+<details>
+  <summary>Answer</summary>
+
+qualia906/webapp-color:v1
 
 </details>

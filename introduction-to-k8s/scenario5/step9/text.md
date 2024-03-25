@@ -1,15 +1,16 @@
-`my-volume` という名前の volume を作成してください。
+Deployment `frontend` のアプリケーションのバージョンを Version 1 にロールバックしてください。
 
 <details>
   <summary>Hints</summary>
 
-`docker volume create` コマンドを使用します`
+`kubectl rollout undo` コマンドを使用します。  
+または `/root/manifests/frontend-deployment.yaml` を編集して `image` フィールドを元の値に戻すこともできます。  
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-`docker volume create my-volume`{{execute}} コマンドを実行します
+`kubectl rollout undo deployment frontend`{{execute}} を実行します。
 
 </details>

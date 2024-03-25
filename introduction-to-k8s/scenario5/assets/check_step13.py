@@ -13,9 +13,9 @@ try:
     container_name = output_json['spec']['template']['spec']['containers'][0]['name']
     container_port = output_json['spec']['template']['spec']['containers'][0]['ports'][0]['containerPort']
 
-    if (deployment_name == 'frontend-green' and replicas == 4 and 
-        match_labels == {'name': 'webapp', 'version': 'v2'} and
-        container_image == 'qualia906/webapp-color:v2' and
+    if (deployment_name == 'frontend-canary' and replicas == 1 and 
+        match_labels == {'name': 'webapp', 'version': 'v3'} and
+        container_image == 'qualia906/webapp-color:v3' and
         container_port == 8080):
         sys.exit(0)  # 条件を満たす
     else:

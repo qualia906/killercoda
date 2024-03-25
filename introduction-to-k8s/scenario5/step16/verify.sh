@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 指定された Deployment の存在を確認
-kubectl get deployment frontend &> /dev/null
+kubectl get deployment frontend-green &> /dev/null
 
 # コマンドの終了コードを確認
 if [ $? -eq 0 ]; then

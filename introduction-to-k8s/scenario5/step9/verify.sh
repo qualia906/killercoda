@@ -1,13 +1,17 @@
 #!/bin/bash
 
-# ボリューム名を指定
-volume_name="my-volume"
+# Deployment の詳細を取得
+output=$(kubectl get deployment frontend -o custom-columns=NAME:.metadata.name,IMAGE:.spec.template.spec.containers[*].image,REPLICAS:.spec.replicas --no-headers)
 
-# Dockerボリュームリストに指定されたボリュームが存在するか確認
-if docker volume ls --format "{{.Name}}" | grep -q "^${volume_name}$"; then
-    echo "Volume ${volume_name} has been created."
+# Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
+python3 /my/location/check_step9.py "$output"
+result=$?
+
+# Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定
+if [ $result -eq 0 ]; then
+    echo "条件を満たしています。"
     exit 0
 else
-    echo "Volume ${volume_name} has not been created."
+    echo "条件を満たしていません。"
     exit 1
 fi

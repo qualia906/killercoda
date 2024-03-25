@@ -1,13 +1,38 @@
-再度、先ほどコピーしたパスを使用して以下のコマンドを実行してください。
+Deployment `frontend` では、Rolling Update の際、一度に何個までの Pod が削除されますか。
+
+- [ ] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
+
+
+<details>
+  <summary>Hints</summary>
+
+`kubectl describe deployment frontend` を実行し、`maxUnavailable` フィールドを確認します。  
+https://kubernetes.io/ja/docs/concepts/workloads/controllers/deployment/#deployment%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88
+
+</details>
+
+
+<details>
+  <summary>Solution</summary>
+
+`kubectl describe deployment frontend` を実行すると、`maxUnavailable` フィールドが `25%` であることがわかります。これは、Rolling Update の際、一度にレプリカ数 4 個のうちの 25%　まで、すなわち 1 個の Pod が削除されることを意味します。
 
 ```
-ls -la <UpperDir のパス>
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
 ```
 
-コンテナが削除されたためレイヤーのデータも削除され、ファイルにアクセスできないことを確認します。  
+</details>
 
+<details>
+  <summary>Answer</summary>
 
-出力の例：
-```
-ls: cannot access '/var/lib/docker/overlay2/5b63e7a482bbe07ec5dcf69b55eb834324951bb9fafcbb4706ebc640795e79e2/diff/': No such file or directory
-```
+1
+
+</details>

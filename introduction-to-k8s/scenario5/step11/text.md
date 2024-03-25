@@ -1,19 +1,40 @@
-コンテナ `nginx-1` の `/usr/local/share/my-volume` に `data.txt` というファイルを作成して `My important data` という文字列を保存してください。これを実行することで、`my-volume` 内にファイルが保存されます。
+Version 1 のアプリケーションにアクセスするための Serive `frontend-service` は `/root/manifests/frontend-service.yaml` で定義されています。  
+いま作成した `frontend-green` の Version 2 のアプリケーションにアクセス先が切り替わるように `frontend-service` を更新してください。  
 
-コンテナ `nginx-1` で `bash -c "echo 'My important data' > /usr/local/share/my-volume/data.txt'"` を実行してください。
-これを実行することで、`my-volume` 内にファイルが書き込まれます。
+アクセス先が正しく切り替わったかどうかは、以下のリンクからアプリケーションにアクセスして確認できます。  
+{{TRAFFIC_HOST1_30080}}
+
 
 <details>
   <summary>Hints</summary>
 
-- ワンライナーで実行するには、`docker container exec` コマンドを使用して `bash -c "echo 'My important data' > /usr/local/share/my-volume/data.txt"` を実行します。
-- `docker container exec -it nginx-1 bash` でコンテナのシェルにアクセスし、`echo 'My important data' > /usr/local/share/my-volume/data.txt` を実行することもできます。
+`/root/manifests/frontend-service.yaml` を編集して `selector` フィールドを更新します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-`docker container exec nginx-1 bash -c "echo 'My important data' > /usr/local/share/my-volume/data.txt"`{{execute}} を実行します。
+`/root/manifests/frontend-service.yaml` を以下のように更新します。
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+  namespace: default
+spec:
+  ports:
+  - nodePort: 30080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    name: webapp
+    version: v2
+  type: NodePort
+```{{copy}}
+
+`kubectl apply -f /root/manifests/frontend-service.yaml`{{execute}} を実行します。
 
 </details>

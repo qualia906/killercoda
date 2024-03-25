@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Deployment の詳細を取得
-output=$(kubectl get deployment frontend-green -o json)
+# Service の詳細を取得
+output=$(kubectl get service frontend-service --namespace default -o json)
 
 # Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
-python3 /my/location/check_step10.py "$output"
+python3 /my/location/check_step14.py "$output"
 result=$?
 
 # Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定

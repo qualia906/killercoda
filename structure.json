@@ -1,7 +1,5 @@
 {
   "items": [
-    { "path": "course1" },
-    { "path": "course2" },
     { "path": "introduction-to-docker", "title": "Introduction to Docker"},
     { "path": "introduction-to-k8s", "title": "Introduction to Kubernetes for App Developers"}
   ]

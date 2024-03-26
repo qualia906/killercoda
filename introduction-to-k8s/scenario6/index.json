@@ -71,10 +71,10 @@
         {"file": "check_step5.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step7.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "pod-emptydir.yaml", "target": "/my/location"},
-        {"file": "pod-pv.yaml", "target": "/my/location"},
-        {"file": "pvc-local-path.yaml", "target": "/my/location"},
-        {"file": "statefulset-nginx.yaml", "target": "/my/location"}
+        {"file": "pod-emptydir.yaml", "target": "/root/manifests"},
+        {"file": "pod-pv.yaml", "target": "/root/manifests"},
+        {"file": "pvc-local-path.yaml", "target": "/root/manifests"},
+        {"file": "statefulset-nginx.yaml", "target": "/root/manifests"}
       ]
     },
     "finish": {

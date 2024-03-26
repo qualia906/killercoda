@@ -30,6 +30,6 @@ spec:
       emptyDir: {}
 ```{{copy}}
 
-`kubectl apply -f /root/manifests/pod-emptydir.yaml` を実行して Pod を作成します。
+`kubectl apply -f /root/manifests/pod-emptydir.yaml`{{execute}} を実行して Pod を作成します。
 
 </details>

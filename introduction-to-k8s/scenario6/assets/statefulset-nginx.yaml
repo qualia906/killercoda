@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: backend
   serviceName: nginx-h
-  replicas: 3 
+  replicas: 
   template:
     metadata:
       labels:

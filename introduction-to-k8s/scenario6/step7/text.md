@@ -1,3 +1,5 @@
+いま作成した `pvc-1` を使用して PersistentVolume を利用する Pod を作成します。  
+
 `/root/manifests/pod-pv.yaml` を用意しました。  
 このマニフェスト ファイルに必要な項目を追加して、PersistentVolume をマウントした Pod を作成してください。  
 

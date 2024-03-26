@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: nginx-container
-      image: nginx
+      image: 
       volumeMounts:
 
 

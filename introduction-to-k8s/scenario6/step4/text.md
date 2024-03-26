@@ -1,16 +1,21 @@
-イメージ `alpine` を使用して、ネットワーク `none` に接続された `alpine-2` という名前のコンテナを実行してください。  
-(コンテナは起動直後に停止しても構いません) 
+StorageClass `local-path` を指定して PersistentVolumeClaim を作成した場合の動作として正しいのはどれですか。
+
+- [ ] PersistentVolumeClaim が作成されると同時に対応する PersistentVolume が作成されバインドされる。
+- [ ] PersistentVolume は自動作成されず、手動で作成する必要がある。
+- [ ] PersistentVolumeClaim を使用する Pod が作成される際に PersistentVolume が自動作成されバインドされる。
+
+
 
 <details>
   <summary>Hints</summary>
 
-ネットワークへの接続を設定するには `docker container run` コマンドで `--network=none` を指定します。
+以下のドキュメントを参照してください。  
+https://kubernetes.io/ja/docs/concepts/storage/storage-classes/#%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%A0%E3%83%90%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%BC%E3%83%89
 
 </details>
 
 <details>
-  <summary>Solution</summary>
-
-`docker container run --name alpine-2 --network=none alpine`{{execute}} コマンドを実行します。
+  <summary>Answer</summary>
+PersistentVolumeClaim が割り当てられた Pod が起動する際に PersistentVolume が自動作成されバインドされる。
 
 </details>

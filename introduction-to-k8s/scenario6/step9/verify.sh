@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# PVC の詳細を取得
-output=$(kubectl get pvc pvc-1 -o json)
+# StatefulSet の詳細を取得
+output=$(kubectl get statefulset nginx -o json)
 
 # Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
-python3 /my/location/check_step5.py "$output"
+python3 /my/location/check_step9.py "$output"
 result=$?
 
 # Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定

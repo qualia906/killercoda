@@ -1,57 +1,80 @@
 {
-  "title": "6. ネットワーク",
-  "description": "Docker のネットワーク機能の演習",
+  "title": "6. PersistentVolume と StatefulSet の使用",
+  "description": "PersistentVolume と StatefulSet の演習",
   "details": {
     "intro": {
-      "text": "intro/intro.md",
-      "background": "intro/background.sh"
+      "text": "intro/intro.md"
     },
     "steps": [
       {
-        "title": "問題 1/8",
-        "text": "step1/text.md"
+        "title": "問題 1/13",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
       },
       {
-        "title": "問題 2/8",
-        "text": "step2/text.md",
-        "foreground": "step2/foreground.sh"
+        "title": "問題 2/13",
+        "text": "step2/text.md"
       },
       {
-        "title": "問題 3/8",
+        "title": "問題 3/13",
         "text": "step3/text.md"
       },
       {
-        "title": "問題 4/8",
-        "text": "step4/text.md",
-        "verify": "step4/verify.sh"
+        "title": "問題 4/13",
+        "text": "step4/text.md"
       },
       {
-        "title": "問題 5/8",
+        "title": "問題 5/13",
         "text": "step5/text.md",
         "verify": "step5/verify.sh"
       },
       {
-        "title": "問題 6/8",
-        "text": "step6/text.md",
-        "verify": "step6/verify.sh"
+        "title": "問題 6/13",
+        "text": "step6/text.md"
       },
       {
-        "title": "問題 7/8",
+        "title": "問題 7/13",
         "text": "step7/text.md",
         "verify": "step7/verify.sh"
       },
       {
-        "title": "問題 8/8",
+        "title": "問題 8/13",
         "text": "step8/text.md"
+      },
+      {
+        "title": "問題 9/13",
+        "text": "step9/text.md",
+        "verify": "step9/verify.sh"
+      },
+      {
+        "title": "問題 10/13",
+        "text": "step10/text.md"
+        
+      },
+      {
+        "title": "問題 11/13",
+        "text": "step11/text.md",
+        "verify": "step11/verify.sh"
+      },
+      {
+        "title": "問題 12/13",
+        "text": "step12/text.md"
+      },
+      {
+        "title": "問題 13/13",
+        "text": "step13/text.md"
       }
     ],
     "assets": {
       "host01": [
-        {"file": "check_step4.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "check_step1.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step5.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "check_step6.py", "target": "/my/location", "chmod": "+x"},
         {"file": "check_step7.py", "target": "/my/location", "chmod": "+x"},
-        {"file": "step2.sh", "target": "/my/location", "chmod": "+x"}
+        {"file": "check_step9.py", "target": "/my/location", "chmod": "+x"},
+        {"file": "pod-emptydir.yaml", "target": "/my/location"},
+        {"file": "pod-pv.yaml", "target": "/my/location"},
+        {"file": "pvc-local-path.yaml", "target": "/my/location"},
+        {"file": "statefulset-nginx.yaml", "target": "/my/location"}
       ]
     },
     "finish": {
@@ -59,6 +82,6 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }

@@ -1,30 +1,22 @@
-(※ スクリプトの実行が完了してから開始してください)  
-`alpine-1` という名前のコンテナを起動しました。  
-このコンテナが接続されているネットワークは以下のどれですか。
+この環境に StorageClass はいくつ存在しますか。
 
-- [ ] bridge
-- [ ] host
-- [ ] none
-- [ ] container
+- [ ] 0
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 
 <details>
   <summary>Hints</summary>
 
-`docker container inspect` コマンドを使用します。
-
-</details>
-
-<details>
-  <summary>Solution</summary>
-
-`docker container inspect alpine-1`{{execute}} コマンドを実行し、`Networks` セクションを確認します。
+`kubectl get storageclasses` コマンドを使用します。  
+短縮名を使用して `kubectl get sc` と書くこともできます。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-bridge
+1
 
 </details>

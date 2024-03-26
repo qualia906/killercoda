@@ -1,13 +1,17 @@
 #!/bin/bash
 
-# コンテナ名を指定
-container_name="webapp"
+# Pod の詳細を取得
+output=$(kubectl get pod pod-pv -o json)
 
-# コンテナが実行中かどうかをチェック
-if ! docker ps --format "{{.Names}}" | grep -q "^${container_name}$"; then
-    echo "Container ${container_name} is not running."
+# Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
+python3 /my/location/check_step7.py "$output"
+result=$?
+
+# Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定
+if [ $result -eq 0 ]; then
+    echo "条件を満たしています。"
+    exit 0
+else
+    echo "条件を満たしていません。"
     exit 1
 fi
-
-# Pythonスクリプトを使用して、コンテナの設定を詳細にチェック
-python3 /my/location/check_step7.py "$container_name"

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: 
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      volumeMounts:
+
+
+  volumes:
+
+

@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# PVC の詳細を取得
-output=$(kubectl get pvc pvc-1 -o json)
+# Pod の詳細を取得
+output=$(kubectl get pod pod-emptydir -o json)
 
 # Python スクリプトに出力を渡して解析し、Python スクリプトの終了コードを変数に格納
-python3 /my/location/check_step5.py "$output"
+python3 /my/location/check_step1.py "$output"
 result=$?
 
 # Python スクリプトの終了コードに基づいてシェルスクリプトの終了コードを設定
 if [ $result -eq 0 ]; then
-    echo "条件を満たしています。"
+    echo "Pod 'pod-emptydir' は正しく設定されています。"
     exit 0
 else
-    echo "条件を満たしていません。"
+    echo "Pod 'pod-emptydir' の設定に問題があります。"
     exit 1
 fi

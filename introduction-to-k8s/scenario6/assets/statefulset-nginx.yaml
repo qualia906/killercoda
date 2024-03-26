@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: 
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  serviceName: nginx-h
+  replicas: 3 
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+        containers:
+          - name: nginx
+            image: 
+            ports:
+              - containerPort: 8080
+                name: nginx
+            volumeMounts:
+              - name: data
+                
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: [ "ReadWriteOnce" ]

@@ -6,13 +6,12 @@ output_json = json.loads(sys.argv[1])
 
 # 条件を満たしているかチェック
 try:
-    pvc_name = output_json['metadata']['name']
-    storage_class_name = output_json['spec']['storageClassName']
-    access_modes = output_json['spec']['accessModes']
-    storage_request = output_json['spec']['resources']['requests']['storage']
+    pod_name = output_json['metadata']['name']
+    container_image = output_json['spec']['containers'][0]['image']
+    volume_name = output_json['spec']['volumes'][0]['name']
+    empty_dir = output_json['spec']['volumes'][0].get('emptyDir', None)
 
-    if (pvc_name == 'pvc-1' and storage_class_name == 'local-path' and 
-        'ReadWriteOnce' in access_modes and storage_request == '1Gi'):
+    if pod_name == 'pod-emptydir' and container_image == 'nginx' and volume_name == 'cache-volume' and empty_dir is not None:
         sys.exit(0)  # 条件を満たす
     else:
         sys.exit(1)  # 条件を満たさない

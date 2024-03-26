@@ -1,4 +1,4 @@
-以下の設定で、`test-1` という名前の Docker コンテナを detached モードで実行してください。
+以下の設定で、`test-1` という名前の Pod を作成してください。
 
 - コンテナ名：`test-1`
 - イメージ：`nginx:latest`
@@ -9,7 +9,7 @@
 
 > 解決/回答のためのヒントが書かれています。  
 
-`docker container run` コマンドを使用します。
+`kubectl run` コマンドを使用します。
 
 </details>
 
@@ -18,7 +18,7 @@
 
 > 解決/回答のために必要な手順が書かれています。ヒントだけではわからない場合はここを参照してください。
 
-`docker container run -d --name test-1 nginx:latest`{{execute}} コマンドを実行します。
+`kubectl run test-1 --image nginx:latest`{{execute}} コマンドを実行します。
 
 </details>
 

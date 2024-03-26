@@ -1,11 +1,11 @@
 (※ スクリプトの実行が完了してから開始してください)  
-`alpine-1` という名前のコンテナを起動しました。  
-このコンテナが接続されているネットワークは以下のどれですか。
+`lab-pod` という名前の Pod を作成しました。  
+この Pod で使用されているコンテナイメージは以下のどれですか。
 
-- [ ] bridge
-- [ ] host
-- [ ] none
-- [ ] container
+- [ ] nginx
+- [ ] ubutu
+- [ ] redis
+- [ ] webapp
 
 > 設問の中でスクリプトが実行されることがあります。  
 > この場合は、スクリプトの実行が完了し **Done** が出力されてから作業を開始してください。
@@ -13,20 +13,20 @@
 <details>
   <summary>Hints</summary>
 
-`docker container inspect` コマンドを使用します。
+`kubectl describe pod` コマンドを使用します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-`docker container inspect alpine-1`{{execute}} コマンドを実行し、`Networks` セクションを確認します。
+`kubectl describe pod lab-pod | grep Image`{{execute}} コマンドを実行し、`Image` セクションの値を確認します。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-bridge
+redis
 
 </details>

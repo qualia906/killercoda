@@ -1,5 +1,5 @@
 #!/bin/sh
 
-docker container run -d --name alpine-1 alpine sleep 300
+kubectl run lab-pod --image redis
 
 echo done > /tmp/background_step4

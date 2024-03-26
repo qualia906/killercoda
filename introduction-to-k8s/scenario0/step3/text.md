@@ -15,20 +15,20 @@
 <details>
   <summary>Hints</summary>
 
-`docker image ls` コマンドを使用します。
+`kubectl get` コマンドを使用します。
 
 </details>
 
 <details>
   <summary>Solution</summary>
 
-`docker image ls`{{execute}} コマンドを実行します。
+`kubectl get pods`{{execute}} コマンドを実行します。
 
 </details>
 
 <details>
   <summary>Answer</summary>
 
-2
+3
 
 </details>
